@@ -6,9 +6,28 @@
   text-decoration: underline;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  max-width: 208px;
+.searchBarContainer {
+  background-color: #4F32FE;
+  font: normal normal bold 14px/12px;
+  color: #ffffff;
+  height: 38px;
 }
+
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input){
+  background-color: #4F32FE;
+  height: fit-content;
+  
+}
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input)::placeholder{
+  background-color: #4F32FE;
+  font: normal normal 700 14px/12px;
+  color: #ffffff;
+}
+.searchBarInnerContainer :global(.vtex-store-components-3-x-container){
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
@@ -114,4 +133,8 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.logoImage{
+  padding-top: 12px;
 }
