@@ -19,13 +19,13 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "src": "assets/paper-plane.svg",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "**Frete Grátis** \n\n Acima de R$ 199",
       "blockClass": "deals"
     }
   },
@@ -33,7 +33,10 @@
     "children": [
       "image#deal2",
       "rich-text#deal2"
-    ]
+    ],
+    "props":{
+      "blockClass":"deals"
+    }
   },
   "image#deal2": {
     "props": {
@@ -43,7 +46,7 @@
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "**Troca Grátis** \n\n Na 1ª troca",
       "blockClass": "deals"
     }
   },
@@ -51,7 +54,10 @@
     "children": [
       "image#deal3",
       "rich-text#deal3"
-    ]
+    ],
+    "props":{
+      "blockClass":"deals"
+    }
   },
   "image#deal3": {
     "props": {
@@ -61,7 +67,7 @@
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "**Descontos Progressivos** \n\n Compre mais de um item",
       "blockClass": "deals"
     }
   },
@@ -69,7 +75,10 @@
     "children": [
       "image#deal4",
       "rich-text#deal4"
-    ]
+    ],
+    "props":{
+      "blockClass":"deals"
+    }
   },
   "image#deal4": {
     "props": {
@@ -79,7 +88,7 @@
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "**Até 12X sem juros** \n\n Com parcela mínima de R$ 10",
       "blockClass": "deals"
     }
   }

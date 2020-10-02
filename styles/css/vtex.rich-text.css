@@ -1,7 +1,8 @@
 .container--deals {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   justify-content: center;
+  padding-left: 10px;
 }
 
 .container--shelfTitle {

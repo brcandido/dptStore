@@ -8,23 +8,14 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
 
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "flex-layout.row#2-desktop": {
     "children": ["notification.bar#home"],
     "props": {
-      "fullWidth": "true"
+      "fullWidth": true
     }
   },
   "notification.bar#home": {
@@ -41,21 +32,49 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#searchBarDesktop",
+      "login",
+      "minicart.v2",
+      "flex-layout.col#spacer"
     ]
+  },
+  "flex-layout.col#logoSearch":{
+    "children":[
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#searchBarDesktop",
+      "login",
+      "minicart.v2"
+    ],
+    "props":{
+      "blockClass":"logoSearch",
+      "width": "grow",
+      "horizontalAlign":"middle"
+    } 
+  },
+  "flex-layout.col#searchBarDesktop":{
+    "children":["search-bar#desktop"],
+    "props":{
+      "blockClass": "searchBarDesktop",
+      "width": "grow",
+      "horizontalAlign":"middle"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
-      "width": "grow"
+      "width": "grow",
+      "blockClass": "spacer"
     }
   },
   "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "flex-layout.row#3-desktop",
+      "flex-layout.row#4-desktop"
+    ]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -67,14 +86,17 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "locale-switcher"
     ]
+  },
+  "search-bar#desktop": {
+    "props": {
+      "displayMode": "clear-button",
+      "placeholder": "O que você precisa hoje? :)",
+      "blockClass": "searchBarDesktop"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -93,7 +115,7 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/logo.png",
-      "width": "180"
+      "width": "98.4"
     }
   },
   "header-layout.mobile": {
@@ -140,17 +162,18 @@
       "width": "89"
     }
   },
-  "flex-layout.row#search-bar":{
-    "children":[
+  "flex-layout.row#search-bar": {
+    "children": [
       "search-bar#mobile"
     ],
-    "props":{
-      "blockClass":"searchBarMobile"
+    "props": {
+      "blockClass": "searchBarMobile"
     }
   },
-  "search-bar#mobile":{
-    "props":{
-      "displayMode": "clear-button"
+  "search-bar#mobile": {
+    "props": {
+      "displayMode": "clear-button",
+      "blockClass": "searchBarMobile"
     }
   }
 }
