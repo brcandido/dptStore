@@ -35,10 +35,11 @@
   },
   "flex-layout.row#selling-price-savings": {
     "props": {
-      "colGap": 2,
+      "blockClass":"linhaPreco",
+      "colGap": 0,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 0
     },
     "children": [
       "product-selling-price#summary",

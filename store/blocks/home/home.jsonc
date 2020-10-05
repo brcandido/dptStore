@@ -6,8 +6,11 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
+      "rich-text#destaque-title",
+      "list-context.image-list#categorias-destaque",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      "flex-layout.row#banners",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -44,11 +47,74 @@
       "blockClass": "carousel"
     }
   },
+  "rich-text#destaque-title": {
+    "props": {
+      "text": "Categorias em Destaque",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "list-context.image-list#categorias-destaque": {
+    "children": ["slider-layout#categorias-destaque"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/note.png",
+          "mobileImage": "assets/note.png"
+        },
+        {
+          "image": "assets/tablet.png",
+          "mobileImage": "assets/tablet.png"
+        },
+        {
+          "image": "assets/celulares.png",
+          "mobileImage": "assets/celulares.png"
+        },
+        {
+          "image": "assets/tvs.png",
+          "mobileImage": "assets/tvs.png"
+        },
+        {
+          "image": "assets/eletros.png",
+          "mobileImage": "assets/eletros.png"
+        },
+        {
+          "image": "assets/beleza.png",
+          "mobileImage": "assets/beleza.png"
+        },
+        {
+          "image": "assets/decor.png",
+          "mobileImage": "assets/decor.png"
+        },
+        {
+          "image": "assets/audio.png",
+          "mobileImage": "assets/audio.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#categorias-destaque": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 4,
+        "phone": 2
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": []
+  },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "text": "Mais Vendidos",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
     }
   },
   "flex-layout.row#shelf": {
@@ -66,11 +132,70 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "height": 300,
+      "showNavigationArrows":"desktopOnly"
+    }
+  },
+  "flex-layout.row#banners":{
+    "props":{
+      "colGap": 0,
+      "blockClass":"banners"
+    },
+    "children":[
+      "image#miBand",
+      "image#pcGamer",
+      "image#eBooks",
+      "image#produtosApple",
+      "image#tvLed",
+      "image#decor"
+    ]
+  },
+
+  "image#miBand":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/miBand5.png"
+    }
+  },
+  "image#pcGamer":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/pcGamer.png"
+    }
+  },
+  "image#eBooks":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/eBooks.png"
+    }
+  },
+  "image#produtosApple":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/produtosApple.png"
+    }
+  },
+  "image#tvLed":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/tvLed.png"
+    }
+  },
+  "image#decor":{
+    "props":{
+      "maxHeight": 250,
+      "maxWidth": 192,
+      "src": "assets/decoracao.png"
     }
   },
 

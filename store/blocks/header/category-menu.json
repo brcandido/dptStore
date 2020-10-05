@@ -4,13 +4,21 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
+      "drawer",
+      "menu-item#more",
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-informatica",
+      "menu-item#category-casaEBanho",
+      "menu-item#category-decoracao",
+      "menu-item#category-belezaEPerf",
+      "menu-item#category-tvEAudio",
+      "menu-item#category-saldao"
     ]
   },
   "menu-item#category-apparel": {
     "props": {
+      "blockClass": "menu-item",
       "id": "menu-item-category-apparel",
       "type": "custom",
       "iconId": null,
@@ -19,8 +27,8 @@
         "type": "internal",
         "href": "/apparel---accessories/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Eletrônicos",
+        "text": "Eletrônicos"
       }
     },
     "blocks": [
@@ -92,6 +100,7 @@
   },
   "menu-item#category-home": {
     "props": {
+      "blockClass": "menu-item",
       "id": "menu-item-category-home",
       "type": "custom",
       "iconId": null,
@@ -100,8 +109,104 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Celulares",
+        "text": "Celulares"
+      }
+    }
+  },
+  "menu-item#category-informatica": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Informática",
+        "text": "Informática"
+      }
+    }
+  },
+  "menu-item#category-casaEBanho": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Casa e Banho",
+        "text": "Casa e Banho"
+      }
+    }
+  },
+  "menu-item#category-decoracao": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Decoração",
+        "text": "Decoração"
+      }
+    }
+  },
+  "menu-item#category-belezaEPerf": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Beleza e Perfumaria",
+        "text": "Beleza e Perfumaria"
+      }
+    }
+  },
+  "menu-item#category-tvEAudio": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "TV e Audio",
+        "text": "TV e Audio"
+      }
+    }
+  },
+  "menu-item#category-saldao": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Saldão",
+        "text": "Saldão"
       }
     }
   },
@@ -110,13 +215,13 @@
       "id": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
-      "highlight": false,
+      "highlight": true,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Todas as Categorias",
+        "text": "Todas as Categorias"
       }
     },
     "blocks": [

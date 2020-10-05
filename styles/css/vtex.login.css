@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px){
+    .buttonLink{
+      display: none;
+    }
+}
+
+  .buttonLink{
+    background-color: #4f32fe;
+  }

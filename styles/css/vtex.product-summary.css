@@ -20,13 +20,15 @@
 .nameContainer {
   justify-content: start;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  text-align: left;
+  font: normal normal normal 14px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 .container {
@@ -39,4 +41,8 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.element :global(.vtex-reviews-and-ratings-1-x-inlineContainer){
+  display: none;
 }

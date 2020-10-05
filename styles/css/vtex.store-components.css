@@ -12,6 +12,9 @@
   min-width: 898px;
 }
 
+.searchBarIcon--searchBarDesktop{
+  background-color: #4f32fe;
+}
 
 
 .searchBarContainer--searchBarMobile {

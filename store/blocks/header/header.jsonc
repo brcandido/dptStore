@@ -50,11 +50,17 @@
       "width": "10%"
     }
   },
+  "login":{
+    "props":{
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
+  },
   "flex-layout.col#searchBarDesktop":{
     "children":["search-bar#desktop"],
     "props":{
       "blockClass": "searchBarDesktop",
-      "width": "70%",
+      "width": "50%",
       "marginRight": "0"
     }
   },
@@ -83,9 +89,9 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "locale-switcher"
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
     ]
   },
   "search-bar#desktop": {
@@ -98,13 +104,15 @@
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
-      "width":"10%"
+      "width":"10%",
+      "blockClass":"logoDesktop"
     },
     "children": ["logo#desktop"]
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "width":"70%"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
@@ -145,6 +153,11 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
+      "menu-item#category-informatica",
+      "menu-item#category-casaEBanho",
+      "menu-item#category-decoracao",
+      "menu-item#category-belezaEPerf",
+      "menu-item#category-tvEAudio",
       "menu-item#more"
     ],
     "props": {

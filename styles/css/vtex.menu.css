@@ -1,0 +1,20 @@
+@media only screen and (max-width: 768px) {
+    .menuItem--menu-item {
+        text-align: left;
+        font: normal normal normal 16px/50px Nunito Sans;
+        letter-spacing: 0px;
+        color: #17100D;
+        background: #F6F5F8 0% 0% no-repeat padding-box;
+        border-bottom: 1px solid #e4ddee;
+        opacity: 1;
+        min-width: 22em;
+    }
+}
+
+.styledLinkContent--menu-item{
+    text-align: left;
+    font: normal normal 600 15px/12px Nunito Sans;
+    letter-spacing: 0px;
+    color: #17100D;
+    opacity: 1;
+}

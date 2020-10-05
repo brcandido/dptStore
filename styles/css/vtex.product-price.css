@@ -10,8 +10,11 @@
 }
 
 .sellingPriceValue {
-  font-size: 2.25rem;
-  font-weight: 700;
+  text-align: left;
+  font: normal normal 900 13px/55px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 .installments {
@@ -25,9 +28,11 @@
 }
 
 .sellingPriceValue--summary {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2E2E2E;
+  text-align: left;
+  font: normal normal 900 13px/55px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 .savings--summary {
@@ -52,6 +57,9 @@
 }
 
 .installments--summary {
-  margin-bottom: 2rem;
-  font-size: 0.875rem;
+  text-align: left;
+  font: normal normal normal 12px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  flex-wrap: nowrap;
 }
