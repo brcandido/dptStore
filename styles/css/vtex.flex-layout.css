@@ -124,15 +124,21 @@
 }
 
 .flexCol--logoSearch{
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.flexCol--searchBar{
-  display: flex;
-  flex-grow: 1;
-  min-width: 898px;
+.flexCol--searchBar {
+  justify-content: center;
+  margin: 0 auto;
+  max-width: initial !important;
 }
 
+.flexCol--loginCart{
+  flex-direction: row;
+}
+
+.flexColChild--searchBarDesktop :global(.vtex-store-components-3-x-searchBarContainer){
+  max-width: none;
+}
 
