@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
     .menuItem--menu-item {
         text-align: left;
         font: normal normal normal 16px/50px Nunito Sans;
@@ -8,13 +8,35 @@
         border-bottom: 1px solid #e4ddee;
         opacity: 1;
         min-width: 22em;
+        min-height: 46.5px;
     }
 }
 
-.styledLinkContent--menu-item{
+@media only screen and (min-width: 768px){
+    .menuItem--menu-item{
+        text-align: left;
+        font: normal normal 600 15px/12px Nunito Sans;
+        letter-spacing: 0px;
+        color: #17100D;
+        opacity: 1;
+        align-items: center;
+    }
+}
+
+.styledLinkContent--menu-footer-mobile{
     text-align: left;
     font: normal normal 600 15px/12px Nunito Sans;
     letter-spacing: 0px;
     color: #17100D;
     opacity: 1;
+    background-color: #f6f5f8;
+    min-height: 2em;
+    align-items: center;
+    
+}
+
+.menuItemInnerDiv--menu-footer-mobile :global(.vtex-menu-2-x-styledLinkContainer--menu-footer-mobile){
+    min-width: 26em;
+    max-width: none;
+    margin: 0;
 }

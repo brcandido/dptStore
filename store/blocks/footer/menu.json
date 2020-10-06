@@ -92,8 +92,8 @@
         "type": "internal",
         "href": "/decoration/smartphones",
         "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
       }
     }
   },
@@ -108,8 +108,8 @@
         "type": "internal",
         "href": "/decoration/videogames",
         "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
+        "tagTitle": "Meus Pedidos",
+        "text": "Meus Pedidos"
       }
     }
   },
@@ -124,8 +124,8 @@
         "type": "internal",
         "href": "/decoration/tvs",
         "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
+        "tagTitle": "Política de Trocas",
+        "text": "Política de Trocas"
       }
     }
   },
@@ -205,16 +205,17 @@
 
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "menu-footer-mobile"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#sobre-mobile",
+      "menu-item#atendimento-mobile",
+      "menu-item#ajuda-mobile"
     ]
   },
 
-  "menu-item#clothing-mobile": {
+  "menu-item#sobre-mobile": {
     "props": {
       "id": "menu-item-category-clothing",
       "type": "custom",
@@ -224,73 +225,73 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+        "tagTitle": "Sobre",
+        "text": "Sobre"
+      },
+      "blockClass": "menu-footer-mobile"
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sobre"]
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  "vtex.menu@2.x:submenu.accordion#sobre": {
+    "children": ["vtex.menu@2.x:menu#sobre-accordion"]
   },
 
-  "vtex.menu@2.x:menu#clothing-accordion": {
+  "vtex.menu@2.x:menu#sobre-accordion": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
       "menu-item#shorts",
       "menu-item#tank-tops",
-      "menu-item#shirts",
+      "menu-item#shirts"
+    ]
+  },
+
+  "menu-item#atendimento-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      },
+      "blockClass": "menu-footer-mobile"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atendimento"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atendimento": {
+    "children": ["vtex.menu@2.x:menu#footer-atendimento-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-atendimento-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#smartphones",
+      "menu-item#videogames"
+    ]
+  },
+
+  "menu-item#ajuda-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      },
+      "blockClass": "menu-footer-mobile"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ajuda"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ajuda": {
+    "children": ["vtex.menu@2.x:menu#footer-ajuda-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-ajuda-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
       "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
-  "menu-item#decoration-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
-  },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#sale-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
+      "menu-item#cropped",
       "menu-item#tvs"
     ]
   },
@@ -305,8 +306,8 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Sobre",
+        "text": "Sobre"
       }
     }
   },
@@ -321,8 +322,8 @@
         "type": "internal",
         "href": "/clothing/shorts",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
+        "tagTitle": "A marca",
+        "text": "A marca"
       }
     }
   },
@@ -337,8 +338,8 @@
         "type": "internal",
         "href": "/clothing/tank-tops",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
+        "tagTitle": "Fale conosco",
+        "text": "Fale conosco"
       }
     }
   },
@@ -353,8 +354,8 @@
         "type": "internal",
         "href": "/clothing/shirts",
         "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
+        "tagTitle": "Loja Física",
+        "text": "Loja Física"
       }
     }
   },
@@ -369,8 +370,8 @@
         "type": "internal",
         "href": "/clothing/sweatshirt",
         "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
+        "tagTitle": "Pagamento",
+        "text": "Pagamento"
       }
     }
   },
@@ -385,8 +386,8 @@
         "type": "internal",
         "href": "/clothing/cropped",
         "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
       }
     }
   }
