@@ -149,3 +149,40 @@
 .logoImage{
   padding-top: 12px;
 }
+
+.label--newsletter::before{
+  content: "Quer ficar por dentro de tudo?\A\A";
+  text-align: center;
+  font: normal normal bold 20px/12px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  white-space: pre-wrap;
+}
+
+.label--newsletter::after{
+  text-align: center;
+  font: normal normal normal 14px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.label--newsletter{
+  text-align: center;
+  font: normal normal normal 14px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.inputGroup--newsletter{
+  background: #4F32FE 0% 0% no-repeat padding-box;
+  opacity: 1;
+  flex-direction: column;
+}
+
+.container--newsletter{
+  background: #4F32FE 0% 0% no-repeat padding-box;
+  opacity: 1;
+  flex-direction: column;
+}

@@ -8,12 +8,15 @@
       "flex-layout.row#deals",
       "rich-text#destaque-title",
       "list-context.image-list#categorias-destaque",
-      "rich-text#shelf-title",
+      "rich-text#shelf-title1",
       "flex-layout.row#shelf",
       "flex-layout.row#banners",
-      "info-card#home",
+      "flex-layout.row#drones100",
       "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf",
+      "rich-text#shelf-title3",
+      "flex-layout.row#shelf",
       "newsletter"
     ]
   },
@@ -109,9 +112,25 @@
     "children": []
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#shelf-title1": {
     "props": {
       "text": "Mais Vendidos",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "Última Oportunidade",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "Você também vai gostar",
       "blockClass": "shelfTitle",
       "textAlignment":"CENTER",
       "textPosition":"CENTER"
@@ -160,45 +179,66 @@
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/miBand5.png"
+      "src": "assets/miBand5.png",
+      "blockClass":"banners"
     }
   },
   "image#pcGamer":{
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/pcGamer.png"
+      "src": "assets/pcGamer.png",
+      "blockClass":"banners"
     }
   },
   "image#eBooks":{
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/eBooks.png"
+      "src": "assets/eBooks.png",
+      "blockClass":"banners"
     }
   },
   "image#produtosApple":{
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/produtosApple.png"
+      "src": "assets/produtosApple.png",
+      "blockClass":"banners"
     }
   },
   "image#tvLed":{
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/tvLed.png"
+      "src": "assets/tvLed.png",
+      "blockClass":"banners"
     }
   },
   "image#decor":{
     "props":{
       "maxHeight": 250,
       "maxWidth": 192,
-      "src": "assets/decoracao.png"
+      "src": "assets/decoracao.png",
+      "blockClass":"banners"
     }
   },
-
+  "flex-layout.row#drones100":{
+    "children":[
+      "image#drones",
+      "image#100"
+    ]
+  },
+  "image#drones":{
+    "props":{
+      "src": "assets/drones.png"
+    }
+  },
+  "image#100":{
+    "props":{
+      "src": "assets/100ReaisDesconto.png"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -215,15 +255,16 @@
 
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "# Aqui você encontra o melhor de tudo \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
       "blockClass": "question"
     }
   },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+  "newsletter":{
+    "props":{
+      "blockClass": "newsletter",
+      "label": "Acompanhe nossas novidades. Cadastre-se em nossa newsletter.",
+      "placeholder": "Digite seu e-mail",
+      "submit": "Cadastrar"
     }
   }
 }
