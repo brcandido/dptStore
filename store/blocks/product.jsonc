@@ -127,6 +127,13 @@
     "children": ["add-to-cart-button"]
   },
 
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{installmentsNumber}x  de {installmentValue} sem juros"
+    }
+  },
+
   "share#default": {
     "props": {
       "social": {

@@ -84,6 +84,7 @@
 
   "menu-item#smartphones": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-smartphones",
       "type": "custom",
       "iconId": null,
@@ -100,6 +101,7 @@
 
   "menu-item#videogames": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-videogames",
       "type": "custom",
       "iconId": null,
@@ -116,6 +118,7 @@
 
   "menu-item#tvs": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-tvs",
       "type": "custom",
       "iconId": null,
@@ -314,6 +317,7 @@
 
   "menu-item#shorts": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-shorts",
       "type": "custom",
       "iconId": null,
@@ -330,6 +334,7 @@
 
   "menu-item#tank-tops": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-tank-tops",
       "type": "custom",
       "iconId": null,
@@ -346,6 +351,7 @@
 
   "menu-item#shirts": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-shirts",
       "type": "custom",
       "iconId": null,
@@ -362,6 +368,7 @@
 
   "menu-item#sweatshirt": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-sweat-shirts",
       "type": "custom",
       "iconId": null,
@@ -378,6 +385,7 @@
 
   "menu-item#cropped": {
     "props": {
+      "blockClass": "menu-footer-inner",
       "id": "menu-item-cropped",
       "type": "custom",
       "iconId": null,

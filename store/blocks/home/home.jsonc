@@ -16,8 +16,7 @@
       "rich-text#shelf-title2",
       "flex-layout.row#shelf",
       "rich-text#shelf-title3",
-      "flex-layout.row#shelf",
-      "newsletter"
+      "flex-layout.row#shelf"
     ]
   },
 

@@ -23,6 +23,10 @@
     }
 }
 
+.menuItem--menu-footer-mobile{
+    justify-content: flex-start;
+}
+
 .styledLinkContent--menu-footer-mobile{
     text-align: left;
     font: normal normal 600 15px/12px Nunito Sans;
@@ -30,13 +34,35 @@
     color: #17100D;
     opacity: 1;
     background-color: #f6f5f8;
-    min-height: 2em;
+    min-height: 3em;
     align-items: center;
-    
+    padding-left: 1em;
 }
 
 .menuItemInnerDiv--menu-footer-mobile :global(.vtex-menu-2-x-styledLinkContainer--menu-footer-mobile){
     min-width: 26em;
     max-width: none;
     margin: 0;
+    padding:0;
 }
+
+.accordionIcon--menu-footer-mobile{
+    display: none;
+}
+
+.menuItem--menu-footer-inner{
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f6f5f8;
+    min-width: 768px;
+    height: 50px;
+}
+
+.styledLinkContent--menu-footer-inner{
+    align-items: center;
+    text-align: left;
+    font: normal normal normal 14px/50px Nunito Sans;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #847B91;
+}
+

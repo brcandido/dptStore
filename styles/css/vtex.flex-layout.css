@@ -150,6 +150,7 @@
   max-height: 10%;
 }
 
+
 @media screen and (max-width: 768px){
   .flexRowContent--banners{
     display: grid;
@@ -159,3 +160,26 @@
     grid-row-gap: 20px;
   }
 }
+
+.flexRow--payment-methods{
+  padding: 0;
+  background-color: #f6f5f8;
+  flex-direction: column;
+}
+
+.flexRow--finalRow{
+  border-bottom: 1px solid #e4ddee;
+}
+
+.flexRowContent--finalRow{
+  align-content: center;
+}
+
+.flexCol--payment-methods{
+  flex-direction: column;
+}
+
+/* .flexRowContent--badges1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */

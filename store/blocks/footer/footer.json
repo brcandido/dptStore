@@ -4,9 +4,9 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "newsletter",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-2-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
@@ -37,10 +37,6 @@
           "url": "https://www.instagram.com/vtextruecloud/"
         },
         {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
           "name": "Youtube",
           "url": "https://www.youtube.com/user/VTEXTV"
         }
@@ -59,58 +55,99 @@
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
   "footer-layout.mobile": {
     "children": [
+      "flex-layout.row#newsletter",
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": [
+      "flex-layout.row#social-networks",
+      "flex-layout.row#payment"],
     "props": {
       "blockClass": "payment-methods",
-      "paddingTop": 4,
       "paddingBottom": 4
     }
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "flex-layout.row#social-networks",
+      "flex-layout.row#payment"
     ],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "rowGap": 4,
+      "horizontalAlign": "center",
+      "fullWidth":true
     }
   },
   "flex-layout.row#1-footer-mobile": {
     "props": {
+      "blockClass":"rowMenu",
       "paddingTop": 4,
-      "paddingBottom": 4
+      "fullWidth": true
     },
     "children": ["vtex.menu@2.x:menu#footer-mobile"]
   },
-  "rich-text#footer-mobile": {
+
+  "flex-layout.row#newsletter":{
+    "children":["newsletter"]
+  },
+
+  "flex-layout.row#social-networks":{
+    "children":[
+      "social-networks",
+      "flex-layout.row#badges1"
+    ],
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "blockClass":"finalRow",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#badges1":{
+    "children":[
+      "image#letsEncrypt",
+      "image#ebit",
+      "image#pci"
+    ],
+    "props":{
+      "blockClass": "badges1"
+    }
+  },
+  "image#letsEncrypt":{
+    "props":{
+      "maxHeight": 61,
+      "maxWidth": 205,
+      "src": "assets/letsencrypt.png",
+      "blockClass":"banners"
+    }
+  },
+  "image#ebit":{
+    "props":{
+      "maxHeight": 61,
+      "maxWidth": 205,
+      "src": "assets/ebit.png",
+      "blockClass":"banners"
+    }
+  },
+  "image#pci":{
+    "props":{
+      "maxHeight": 61,
+      "maxWidth": 205,
+      "src": "assets/pci.png",
+      "blockClass":"banners"
+    }
+  },
+  "flex-layout.row#payment":{
+    "children":["accepted-payment-methods"],
+    "props": {
+      "blockClass":"finalRow",
+      "fullWidth": true,
+      "horizontalAlign": "center"
     }
   }
 }
