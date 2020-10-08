@@ -5,23 +5,35 @@
   "footer-layout.desktop": {
     "children": [
       "newsletter",
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop"
+      "flex-layout.row#footer-1-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
+      "vtex.menu@2.x:menu#footer-sobre-desktop",
+      "vtex.menu@2.x:menu#footer-atendimento-desktop",
+      "vtex.menu@2.x:menu#footer-ajuda-desktop",
+      "flex-layout.col#pagamentos",
       "social-networks"
     ],
     "props": {
       "blockClass": "menu-row",
       "paddingTop": 6,
       "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#pagamentos":{
+    "children":[
+      "rich-text#pagamentos",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "rich-text#pagamentos":{
+    "props":{
+      "text": "Pagamentos",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "pagamentos"
     }
   },
 
@@ -45,9 +57,58 @@
   },
 
   "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+    "children": [
+      "image#visa",
+      "image#masterCard",
+      "image#dinersClub",
+      "image#ameriEx",
+      "image#elo",
+      "image#boleto"
+    ],
     "props": {
-      "blockClass": "payment-methods"
+      "blockClass": "payment-methods-desktop"
+    }
+  },
+  "image#visa":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/visa.png"
+    }
+  },
+  "image#masterCard":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/master.png"
+    }
+  },
+  "image#dinersClub":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/diners.png"
+    }
+  },
+  "image#ameriEx":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/amex.png"
+    }
+  },
+  "image#elo":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/elo.png"
+    }
+  },
+  "image#boleto":{
+    "props":{
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/boleto.png"
     }
   },
   "accepted-payment-methods": {
@@ -65,23 +126,13 @@
   "flex-layout.row#2-footer-mobile": {
     "children": [
       "flex-layout.row#social-networks",
-      "flex-layout.row#payment"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "flex-layout.row#social-networks",
-      "flex-layout.row#payment"
+      "flex-layout.row#payment",
+      "flex-layout.row#badges1",
+      "flex-layout.row#allRights"
     ],
     "props": {
       "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "rowGap": 4,
-      "horizontalAlign": "center",
-      "fullWidth":true
+      "paddingBottom": 4
     }
   },
   "flex-layout.row#1-footer-mobile": {
@@ -99,13 +150,12 @@
 
   "flex-layout.row#social-networks":{
     "children":[
-      "social-networks",
-      "flex-layout.row#badges1"
+      "social-networks"
     ],
     "props": {
-      "blockClass":"finalRow",
       "fullWidth": true,
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": "socialNetworks"
     }
   },
   "flex-layout.row#badges1":{
@@ -115,39 +165,81 @@
       "image#pci"
     ],
     "props":{
-      "blockClass": "badges1"
+      "blockClass": "badges1",
+      "fullWidth": true
     }
   },
   "image#letsEncrypt":{
     "props":{
-      "maxHeight": 61,
-      "maxWidth": 205,
-      "src": "assets/letsencrypt.png",
-      "blockClass":"banners"
+      "maxHeight": 31,
+      "maxWidth": 115,
+      "src": "assets/letsencrypt.png"
     }
   },
   "image#ebit":{
     "props":{
-      "maxHeight": 61,
-      "maxWidth": 205,
-      "src": "assets/ebit.png",
-      "blockClass":"banners"
+      "maxHeight": 41,
+      "maxWidth": 43,
+      "src": "assets/ebit.png"
     }
   },
   "image#pci":{
     "props":{
-      "maxHeight": 61,
-      "maxWidth": 205,
-      "src": "assets/pci.png",
-      "blockClass":"banners"
+      "maxHeight": 38,
+      "maxWidth": 62,
+      "src": "assets/pci.png"
     }
   },
   "flex-layout.row#payment":{
-    "children":["accepted-payment-methods"],
+    "children":[
+      "image#visa",
+      "image#masterCard",
+      "image#dinersClub",
+      "image#ameriEx",
+      "image#elo",
+      "image#boleto"],
     "props": {
-      "blockClass":"finalRow",
+      "blockClass":"payment",
       "fullWidth": true,
       "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#allRights":{
+    "children":[
+      "rich-text#avanti",
+      "flex-layout.row#avantiVTEX"
+    ]
+  },
+  "rich-text#avanti":{
+    "props":{
+      "text": "AVANTI S.A © 2020. TODOS OS DIREITOS RESERVADOS.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "allRights"
+    }
+  },
+  "flex-layout.row#avantiVTEX":{
+    "children":[
+      "image#avanti",
+      "image#vtex"
+    ],
+    "props":{
+      "blockClass": "avantiVTEX"
+    }
+  },
+  "image#avanti":{
+    "props":{
+      "maxHeight": 38,
+      "maxWidth": 62,
+      "src": "assets/avanti1.png",
+      "blockClass":"avantiLogo"
+    }
+  },
+  "image#vtex":{
+    "props":{
+      "maxHeight": 38,
+      "maxWidth": 62,
+      "src": "assets/vtex.png"
     }
   }
 }

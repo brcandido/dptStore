@@ -154,7 +154,7 @@
 @media screen and (max-width: 768px){
   .flexRowContent--banners{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 180px 180px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
@@ -167,19 +167,44 @@
   flex-direction: column;
 }
 
-.flexRow--finalRow{
+.flexRow--badges1{
   border-bottom: 1px solid #e4ddee;
+  padding-bottom: 30px;
 }
 
-.flexRowContent--finalRow{
-  align-content: center;
+.flexRowContent--payment{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px;
+  justify-content: center;
+  padding: 20px 0px;
 }
 
 .flexCol--payment-methods{
   flex-direction: column;
 }
 
-/* .flexRowContent--badges1{
+
+.flexRowContent--badges1{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
+  grid-template-columns: 120px 48px 67px;
+  grid-column-gap: 10px;
+  justify-content: center;
+}
+
+.flexRow--socialNetworks{
+  border-bottom: 1px solid #e4ddee;
+  padding-bottom: 10px;
+}
+
+.flexRowContent--avantiVTEX{
+  display: grid;
+  grid-template-columns: 91px 77px;
+  justify-content: center;
+}
+
+.flexRowContent--payment-methods-desktop{
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-start;
+}

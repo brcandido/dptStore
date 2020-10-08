@@ -1,88 +1,39 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  
+  "vtex.menu@2.x:menu#footer-sobre-desktop": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#sobre",
+      "menu-item#aMarca",
+      "menu-item#faleConosco",
+      "menu-item#lojaFisica"
     ]
   },
-  "menu-item#news": {
-    "props": {
-      "id": "menu-item-news",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
-      }
-    }
-  },
-  "menu-item#blackfriday": {
-    "props": {
-      "id": "menu-item-black-friday",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
-      }
-    }
-  },
-  "menu-item#sale": {
-    "props": {
-      "id": "menu-item-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    }
-  },
-  "menu-item#personalization": {
-    "props": {
-      "id": "menu-item-personalization",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration": {
+  "vtex.menu@2.x:menu#footer-atendimento-desktop": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#atendimento",
+      "menu-item#minhaConta",
+      "menu-item#meusPedidos"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-ajuda-desktop": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ajuda",
+      "menu-item#pagamento",
+      "menu-item#polPrivacidade",
+      "menu-item#polTrocas"
     ]
   },
 
-  "menu-item#smartphones": {
+  "menu-item#minhaConta": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-smartphones",
@@ -99,7 +50,7 @@
     }
   },
 
-  "menu-item#videogames": {
+  "menu-item#meusPedidos": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-videogames",
@@ -116,7 +67,7 @@
     }
   },
 
-  "menu-item#tvs": {
+  "menu-item#polTrocas": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-tvs",
@@ -133,78 +84,6 @@
     }
   },
 
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
-
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
-        "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
-      }
-    }
-  },
-
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
 
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
@@ -244,9 +123,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts"
+      "menu-item#aMarca",
+      "menu-item#faleConosco",
+      "menu-item#lojaFisica"
     ]
   },
 
@@ -269,8 +148,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames"
+      "menu-item#atendimento",
+      "menu-item#minhaConta",
+      "menu-item#meusPedidos"
     ]
   },
 
@@ -293,21 +173,21 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#sweatshirt",
-      "menu-item#cropped",
-      "menu-item#tvs"
+      "menu-item#pagamento",
+      "menu-item#polPrivacidade",
+      "menu-item#polTrocas"
     ]
   },
 
-  "menu-item#clothing": {
+  "menu-item#sobre": {
     "props": {
+      "blockClass":"menu-footer-desk-title",
       "id": "menu-item-category-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
         "noFollow": true,
         "tagTitle": "Sobre",
         "text": "Sobre"
@@ -315,7 +195,38 @@
     }
   },
 
-  "menu-item#shorts": {
+  "menu-item#atendimento": {
+    "props": {
+      "blockClass":"menu-footer-desk-title",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "menu-item#ajuda": {
+    "props": {
+      "blockClass":"menu-footer-desk-title",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    }
+  },
+
+  "menu-item#aMarca": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-shorts",
@@ -332,7 +243,7 @@
     }
   },
 
-  "menu-item#tank-tops": {
+  "menu-item#faleConosco": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-tank-tops",
@@ -349,7 +260,7 @@
     }
   },
 
-  "menu-item#shirts": {
+  "menu-item#lojaFisica": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-shirts",
@@ -366,7 +277,7 @@
     }
   },
 
-  "menu-item#sweatshirt": {
+  "menu-item#pagamento": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-sweat-shirts",
@@ -383,7 +294,7 @@
     }
   },
 
-  "menu-item#cropped": {
+  "menu-item#polPrivacidade": {
     "props": {
       "blockClass": "menu-footer-inner",
       "id": "menu-item-cropped",
