@@ -3,4 +3,14 @@
     background: #F6F5F8 0% 0% no-repeat padding-box;
 
 }
+
+.menuIcon{
+    fill: currentColor;
+    color: #4f32fe;
+}
+
+.closeIcon{
+    fill: currentColor;
+    color: #4f32fe;
+}
 }

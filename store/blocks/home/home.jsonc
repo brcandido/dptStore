@@ -226,7 +226,10 @@
     "children":[
       "image#drones",
       "image#100"
-    ]
+    ],
+    "props":{
+      "blockClass":"drones100"
+    }
   },
   "image#drones":{
     "props":{

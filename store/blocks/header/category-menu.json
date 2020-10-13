@@ -6,8 +6,8 @@
     "children": [
       "drawer",
       "menu-item#more",
-      "menu-item#category-apparel",
-      "menu-item#category-home",
+      "menu-item#category-eletronicos",
+      "menu-item#category-celulares",
       "menu-item#category-informatica",
       "menu-item#category-casaEBanho",
       "menu-item#category-decoracao",
@@ -16,7 +16,7 @@
       "menu-item#category-saldao"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-eletronicos": {
     "props": {
       "blockClass": "menu-item",
       "id": "menu-item-category-apparel",
@@ -32,18 +32,18 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#category-eletronicos"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#category-eletronicos": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#category-eletronicos"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#category-eletronicos": {
     "props": {
       "orientation": "vertical"
     },
@@ -98,7 +98,7 @@
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#category-celulares": {
     "props": {
       "blockClass": "menu-item",
       "id": "menu-item-category-home",
@@ -196,7 +196,7 @@
   },
   "menu-item#category-saldao": {
     "props": {
-      "blockClass": "menu-item",
+      "blockClass": "menu-item-saldao",
       "id": "menu-item-category-home",
       "type": "custom",
       "iconId": null,
@@ -212,6 +212,7 @@
   },
   "menu-item#more": {
     "props": {
+      "blockClass":"menu-item",                   
       "id": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
@@ -220,8 +221,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Todas as Categorias",
-        "text": "Todas as Categorias"
+        "tagTitle": "Todos os Departamentos",
+        "text": "Todos os Departamentos"
       }
     },
     "blocks": [

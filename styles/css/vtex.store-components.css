@@ -13,9 +13,14 @@
 }
 
 .searchBarIcon--searchBarDesktop{
-  background-color: #4f32fe;
+  fill: currentColor;
+  color: #4f32fe
 }
 
+.searchBarIcon--searchBarMobile{
+  fill: currentColor;
+  color: #ffffff
+}
 
 .searchBarContainer--searchBarMobile {
   background-color: #4F32FE;
@@ -24,10 +29,11 @@
   height: 38px;
 }
 
+
 .searchBarInnerContainer--searchBarMobile :global(.vtex-styleguide-9-x-input){
   background-color: #4F32FE;
   height: fit-content;
-  
+  color: #fff;
 }
 .searchBarInnerContainer--searchBarMobile :global(.vtex-styleguide-9-x-input)::placeholder{
   background-color: #4F32FE;
@@ -208,4 +214,9 @@
 
 .container--menuRow{
   padding: 0;
+}
+
+.imageElement--socialNetwork{
+  width: 23px;
+  height: 23px;
 }

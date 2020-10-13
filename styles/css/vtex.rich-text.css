@@ -11,6 +11,7 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  padding-top: 30px;
 }
 
 .headingLevel2--shelfTitle {
@@ -26,6 +27,7 @@
 }
 
 .container--question {
+  padding-top: 3.5em;
   justify-content: center;
 }
 
@@ -108,4 +110,21 @@
   color: #000000;
   opacity: 1;
   justify-content: flex-start;
+}
+
+.container--notBar{
+  background-color: #000000;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;                                                       
+}
+
+.italic--notBar{
+  font-style: normal;
+  color: #2cFFF5;
+}
+
+.strong--notBar .italic--notBar{
+  font: normal normal 900 22px/12px Nunito Sans;
+  color: #2cFFF5; 
 }

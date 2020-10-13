@@ -4,20 +4,23 @@
 }
 
 @media screen and (min-width: 40em) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
 }
 
-@media screen and (max-width: 768px){
-  .flexCol--deals{
+@media screen and (max-width: 768px) {
+  .flexCol--deals {
     display: none;
   }
 }
@@ -49,6 +52,7 @@
   color: #727273;
   font-size: 14px;
 }
+
 .flexRow--deals {
   background-color: #4F32FE;
   padding: 14px 0px;
@@ -108,20 +112,22 @@
   padding-bottom: 1rem;
 }
 
-.flexRowContent--searchBarMobile{
+.flexRowContent--searchBarMobile {
   max-height: 38px;
   background-color: #4F32FE;
 }
 
-.flexRow--searchBarMobile :global(.vtex-store-components-3-x-container){
+.flexRow--searchBarMobile :global(.vtex-store-components-3-x-container) {
   padding-right: 0px;
   padding-left: 0px;
 }
-.flexRow--searchBarMobile :global(.vtex-input__suffix){
+
+.flexRow--searchBarMobile :global(.vtex-input__suffix) {
   background: transparent;
   height: fit-content;
 }
-.flexRow--searchBarMobile :global(.vtex-input-prefix__group){
+
+.flexRow--searchBarMobile :global(.vtex-input-prefix__group) {
   border: 0;
 }
 
@@ -132,79 +138,105 @@
   max-width: initial !important;
 }
 
-.flexCol--loginCart{
+.flexCol--loginCart {
   flex-direction: row;
 }
 
-.flexColChild--searchBarDesktop :global(.vtex-store-components-3-x-searchBarContainer){
+.flexColChild--searchBarDesktop :global(.vtex-store-components-3-x-searchBarContainer) {
   max-width: 56.125em;
   margin: 0 auto;
 }
 
-.flexCol--searchBarDesktop :global(.vtex-input-prefix__group){
+.flexCol--searchBarDesktop :global(.vtex-input-prefix__group) {
   border: none;
   border-bottom: 1px solid #e4ddee;
 }
 
-.flexRow--linhaPreco{
+.flexRow--linhaPreco {
   max-height: 10%;
 }
 
 
-@media screen and (max-width: 768px){
-  .flexRowContent--banners{
+@media screen and (max-width: 768px) {
+  .flexRowContent--banners {
     display: grid;
     grid-template-columns: 180px 180px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
+    padding-top: 30px;
   }
 }
 
-.flexRow--payment-methods{
+.flexRow--drones100 {
+  padding-top: 3.5em;
+}
+
+.flexRow--payment-methods {
   padding: 0;
   background-color: #f6f5f8;
   flex-direction: column;
 }
 
-.flexRow--badges1{
+.flexRow--badges1 {
   border-bottom: 1px solid #e4ddee;
   padding-bottom: 30px;
 }
 
-.flexRowContent--payment{
+.flexRowContent--payment {
   display: grid;
   grid-template-columns: 50px 50px 50px 50px 50px 50px;
   justify-content: center;
   padding: 20px 0px;
 }
 
-.flexCol--payment-methods{
+.flexCol--payment-methods {
   flex-direction: column;
 }
 
 
-.flexRowContent--badges1{
+.flexRowContent--badges1 {
   display: grid;
   grid-template-columns: 120px 48px 67px;
   grid-column-gap: 10px;
   justify-content: center;
 }
-
-.flexRow--socialNetworks{
-  border-bottom: 1px solid #e4ddee;
-  padding-bottom: 10px;
+.flexRowContent--socialNetworks {
+ width: 50%;
 }
 
-.flexRowContent--avantiVTEX{
+@media screen and (max-width: 768px) {
+  .flexRowContent--socialNetworks {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+  }
+
+  .flexRow--socialNetworks {
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid #e4ddee;
+  }
+}
+
+.flexRowContent--avantiVTEX {
   display: grid;
   grid-template-columns: 91px 77px;
   justify-content: center;
 }
 
-.flexRowContent--payment-methods-desktop{
+.flexRowContent--payment-methods-desktop {
   display: grid;
   grid-template-columns: 70px 70px 70px;
   grid-template-rows: 1fr 1fr;
   justify-content: flex-start;
+}
+
+.flexRow--menu-row {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #e4ddee;
+}
+
+.flexRowContent--badgesDesktop {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
 }

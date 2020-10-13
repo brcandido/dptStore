@@ -148,7 +148,6 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#atendimento",
       "menu-item#minhaConta",
       "menu-item#meusPedidos"
     ]

@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
   .menuItem--menu-item {
     text-align: left;
-    font: normal normal normal 16px/50px Nunito Sans;
+    font: normal normal normal 16px/40px Nunito Sans;
     letter-spacing: 0px;
     color: #17100D;
     background: #F6F5F8 0% 0% no-repeat padding-box;
@@ -13,13 +13,30 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .menuItem--menu-item {
+  .styledLinkContent--menu-item {
     text-align: left;
     font: normal normal 600 15px/12px Nunito Sans;
     letter-spacing: 0px;
-    color: #17100D;
+    color: #000000;
     opacity: 1;
-    align-items: center;
+  }
+
+  .styledLinkContent--menu-item-saldao{
+    text-align: left;
+    font: normal normal 800 15px/12px Nunito Sans;
+    letter-spacing: 0px;
+    color: #4F32FE;
+    opacity: 1;
+  }
+  .styledLinkContent--menu-item-saldao::before {
+    content: " ";
+    white-space: pre-wrap;
+    width: 16pt;
+    height: 16pt;
+    margin-right: 5px;
+    position: relative;
+    top: -4px;
+    background-image: url("assets/sale-1.svg");
   }
 }
 

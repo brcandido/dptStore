@@ -13,9 +13,17 @@
   },
 
   "flex-layout.row#1-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["rich-text#saldao"],
     "props": {
       "fullWidth": true
+    }
+  },
+  "rich-text#saldao":{
+    "props":{
+      "blockClass":"notBar",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "***#saldão*** produtos com até **60% de desconto** *+* **frete grátis** *+* **12x sem juros**  ***>***"
     }
   },
   "notification.bar#home": {
@@ -151,8 +159,8 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
+      "menu-item#category-eletronicos",
+      "menu-item#category-celulares",
       "menu-item#category-informatica",
       "menu-item#category-casaEBanho",
       "menu-item#category-decoracao",

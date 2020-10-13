@@ -5,7 +5,8 @@
   "footer-layout.desktop": {
     "children": [
       "newsletter",
-      "flex-layout.row#footer-1-desktop"
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-badges-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
@@ -14,7 +15,7 @@
       "vtex.menu@2.x:menu#footer-atendimento-desktop",
       "vtex.menu@2.x:menu#footer-ajuda-desktop",
       "flex-layout.col#pagamentos",
-      "social-networks"
+      "flex-layout.col#socialNetworks"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -36,7 +37,48 @@
       "blockClass": "pagamentos"
     }
   },
-
+  "flex-layout.col#socialNetworks":{
+    "children":[
+      "rich-text#socNet",
+      "flex-layout.row#socNet"
+    ]
+  },
+  "rich-text#socNet":{
+    "props":{
+      "text": "Nossas Redes",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "pagamentos"
+    }
+  },
+  "flex-layout.row#socNet":{
+    "children":[
+      "image#facebook",
+      "image#instagram",
+      "image#youtube"
+    ],
+    "props":{
+      "blockClass":"socialNetworks"
+    }
+  },
+  "image#facebook":{
+    "props":{
+      "src": "assets/facebook2.png",
+      "blockClass":"socialNetwork"
+    }
+  },
+  "image#instagram":{
+    "props":{
+      "src": "assets/instagram2.png",
+      "blockClass":"socialNetwork"
+    }
+  },
+  "image#youtube":{
+    "props":{
+      "src": "assets/youtube2.png",
+      "blockClass":"socialNetwork"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -116,6 +158,29 @@
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
+
+  "flex-layout.row#footer-badges-desktop":{
+    "children":[
+      "flex-layout.row#footer-badges1-desktop",
+      "rich-text#avanti",
+      "flex-layout.row#avantiVTEX"
+    ],
+    "props":{
+      "blockClass":"badgesDesktop"
+    }
+  },
+
+  "flex-layout.row#footer-badges1-desktop":{
+    "children":[
+      "image#letsEncrypt",
+      "image#ebit",
+      "image#pci"
+    ],
+    "props":{
+      "paddingBottom": 5
+    }
+  },
+
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#newsletter",
@@ -150,7 +215,7 @@
 
   "flex-layout.row#social-networks":{
     "children":[
-      "social-networks"
+      "flex-layout.row#socNet"
     ],
     "props": {
       "fullWidth": true,
