@@ -112,6 +112,10 @@
   justify-content: flex-start;
 }
 
+.paragraph--notBar{
+  align-items:center !important;
+}
+
 .container--notBar{
   background-color: #000000;
   color: #ffffff;

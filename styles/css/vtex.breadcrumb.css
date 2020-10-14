@@ -1,0 +1,41 @@
+.homeIcon {
+  display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-link){
+  vertical-align: baseline;
+}
+
+:global(.vtex-breadcrumb-1-x-homeLink)::before {
+  content: "Home";
+}
+
+
+.caretIcon{
+  display: none;
+}
+
+.link{
+  text-align: left;
+  font: normal normal normal 12px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.link::after{
+  content: '|';
+  color: #e6f1e6;
+  padding-left:10px;
+}
+
+.term{
+  text-align: left;
+  font: normal normal bold 12px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #4F32FE;
+  opacity: 1;
+}

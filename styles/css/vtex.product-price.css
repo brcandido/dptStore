@@ -17,6 +17,23 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 768px){
+  .sellingPriceValue {
+    text-align: left;
+    font: normal normal 900 20px/55px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+
+  .installments{
+    text-align: left;
+    font: normal normal normal 12px/55px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+}
+
 .installments {
   color: #727273;
   margin-bottom: 1rem;

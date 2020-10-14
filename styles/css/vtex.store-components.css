@@ -220,3 +220,32 @@
   width: 23px;
   height: 23px;
 }
+
+.swiperPaginationClickable{
+  margin-top:2em;
+  position: relative;
+}
+
+.swiperBullet{
+  margin: 0 1em !important;
+}
+
+.productNameContainer--quickview{
+  text-align: center;
+}
+
+.productBrand{
+  text-align: center;
+  font: normal normal normal 18px/3px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.product-identifier--productReference{
+  text-align: left;
+  font: normal normal 600 12px/55px Nunito Sans;
+  letter-spacing: 0px;
+  color: #847B91;
+  opacity: 1;
+}

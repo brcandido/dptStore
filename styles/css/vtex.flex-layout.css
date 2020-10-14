@@ -240,3 +240,15 @@
   align-items: center;
   padding-top: 2em;
 }
+
+.flexCol--infoProduct{
+  text-align:center;
+}
+
+.flexColChild--infoProduct{
+  margin: 0 auto;
+}
+
+.flexColChild--infoProduct :global(.vtex-flex-layout-0-x-flexRowContent){
+  max-height: initial;
+}

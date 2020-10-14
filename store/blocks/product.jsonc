@@ -69,23 +69,23 @@
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false
     }
   },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": "infoProduct"
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
-      "product-separator",
-      "product-identifier.product",
-      "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
@@ -98,7 +98,6 @@
 
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
     },
     "children": [
       "vtex.store-components:product-name"
