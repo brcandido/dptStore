@@ -4,10 +4,28 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "rich-text#shelfTitleRelated",
+      "shelf.relatedProducts"
     ]
+  },
+  "rich-text#shelfTitleRelated":{
+    "props": {
+      "text": "Quem viu, viu também",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "shelf.relatedProducts":{
+    "props": {
+      "productList":{
+        "arrows": false,
+        "showTitle": false,
+        "minItemsPerPage": 2,
+        "scroll": "ONE_BY_ONE"
+      }
+    },
+    "blocks":["product-summary.shelf"]
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
@@ -21,6 +39,13 @@
     },
     "children": ["product-description"]
   },
+
+  "product-description":{
+    "props":{
+      "collapseContent": false
+    }
+  },
+
   "flex-layout.row#product-main": {
     "props": {
       "colGap": 7,
@@ -67,7 +92,7 @@
     "props": {
       "aspectRatio": {
         "desktop": "auto",
-        "phone": "16:9"
+        "phone": "auto"
       },
       "displayThumbnailsArrows": false,
       "showNavigationArrows": false
@@ -86,13 +111,13 @@
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
+      "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
       "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "shipping-simulator"
     ]
   },
 
@@ -120,6 +145,7 @@
 
   "flex-layout.row#buy-button": {
     "props": {
+      "blockClass": "previewButton",
       "marginTop": 4,
       "marginBottom": 7
     },

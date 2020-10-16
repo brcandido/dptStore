@@ -7,3 +7,10 @@
   .buttonLink{
     background-color: #4f32fe;
   }
+
+  .container{
+    padding-top: 1rem;
+  }
+  .container :global(.vtex-button__label){
+    padding-right: 0;
+  }

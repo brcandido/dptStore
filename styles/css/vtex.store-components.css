@@ -10,6 +10,7 @@
   background-color: #ffffff;
   font: normal normal bold 14px/12px;
   min-width: 898px;
+  padding: 0 4rem;
 }
 
 .searchBarIcon--searchBarDesktop{
@@ -154,6 +155,11 @@
 
 .logoImage{
   padding-top: 12px;
+  max-width: 98.4px;
+}
+
+.logoLink{
+  max-width: 98.4px;
 }
 
 .label--newsletter::before{
@@ -219,6 +225,7 @@
 .imageElement--socialNetwork{
   width: 23px;
   height: 23px;
+  border: none;
 }
 
 .swiperPaginationClickable{
@@ -249,3 +256,62 @@
   color: #847B91;
   opacity: 1;
 }
+
+.shippingContainer :global(.vtex-button)::after{
+  content:"OK";
+  white-space: pre-wrap;
+  border-bottom: 1px solid #E4DDEE;
+  padding-bottom: .1rem;
+  text-align: center;
+  font: normal normal bold 12px/55px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.shippingContainer :global(.vtex-button){
+  width: auto;
+}
+
+.shippingContainer :global(.vtex-button__label){
+  display: none;
+}
+
+.shippingContainer :global(.vtex-input-prefix__group){
+  border: none;
+  border-bottom: 1px solid #E4DDEE;
+  border-radius: 0;
+  height: 2rem;
+}
+
+.shippingContainer :global(.vtex-input)::before{
+  content:"Calcule sua entrega";
+  white-space: pre-wrap;
+  text-align: center;
+  font: normal normal bold 14px/5px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+ 
+}
+
+.shippingContainer :global(.vtex-input__label){
+  display: none;
+}
+
+.productDescriptionTitle{
+  text-align: center;
+  font: normal normal bold 20px/35px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.productDescriptionText{
+  text-align: center;
+  font: normal normal normal 13px/30px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+

@@ -68,7 +68,7 @@
     "children":["search-bar#desktop"],
     "props":{
       "blockClass": "searchBarDesktop",
-      "width": "50%",
+      "width": "70%",
       "marginRight": "0"
     }
   },
@@ -112,15 +112,13 @@
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
-      "width":"10%",
       "blockClass":"logoDesktop"
     },
     "children": ["logo#desktop"]
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle",
-      "width":"70%"
+      "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },

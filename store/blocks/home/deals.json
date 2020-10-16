@@ -40,7 +40,7 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "src": "assets/return.svg",
       "maxHeight": "24px"
     }
   },
@@ -61,7 +61,7 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+      "src": "assets/salebranco.svg",
       "maxHeight": "24px"
     }
   },
@@ -82,7 +82,7 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "src": "assets/credit-card.svg",
       "maxHeight": "24px"
     }
   },

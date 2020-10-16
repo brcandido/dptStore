@@ -3,6 +3,11 @@
   padding: 0 0.5rem;
 }
 
+.flexRow--main-header{
+  max-width: 1920px;
+}
+
+
 @media screen and (min-width: 40em) {
 
   .flexRowContent--menu-link,
@@ -143,8 +148,9 @@
 }
 
 .flexColChild--searchBarDesktop :global(.vtex-store-components-3-x-searchBarContainer) {
-  max-width: 56.125em;
+  max-width: 78.75rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .flexCol--searchBarDesktop :global(.vtex-input-prefix__group) {
@@ -165,6 +171,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     padding-top: 30px;
+    padding-left: 1.25rem;
   }
 }
 
@@ -205,6 +212,10 @@
  width: 50%;
 }
 
+.flexRow--socialNetworks :global(.vtex-flex-layout-0-x-flexRow){
+  border: none;
+}
+
 @media screen and (max-width: 768px) {
   .flexRowContent--socialNetworks {
     display: grid;
@@ -212,9 +223,15 @@
   }
 
   .flexRow--socialNetworks {
-    padding-bottom: 0.25em;
+    padding-top: .5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #e4ddee;
   }
+
+  .flexRowContent--socialNetworks {
+    width: 100%;
+   }
+   
 }
 
 .flexRowContent--avantiVTEX {
@@ -249,6 +266,20 @@
   margin: 0 auto;
 }
 
-.flexColChild--infoProduct :global(.vtex-flex-layout-0-x-flexRowContent){
-  max-height: initial;
+.flexColChild--infoProduct :global(.vtex-store-components-3-x-shippingContainer){
+  display: flex;
+  flex-direction:row;
+}
+.flexColChild--infoProduct :global(.vtex-button){
+ background:none;
+ border: none;
+}
+
+.flexRow--previewButton :global(.vtex-button){
+  background: #4F32FE;
+  border-color: #4F32FE;
+  border-radius: 27px;
+  width: 378px;
+  height: 53px;
+  text-transform: none;
 }
