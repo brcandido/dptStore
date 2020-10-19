@@ -175,8 +175,20 @@
   }
 }
 
+.flexRow--banners{
+  max-width: 78.75rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.flexRowContent--banners{
+  justify-content: center;
+}
+
 .flexRow--drones100 {
   padding-top: 3.5em;
+  max-width: 78.75rem;
+  margin: 0 auto;
 }
 
 .flexRow--payment-methods {
@@ -258,12 +270,27 @@
   padding-top: 2em;
 }
 
-.flexCol--infoProduct{
-  text-align:center;
+
+
+@media only screen and (max-width: 768px){
+  .flexCol--infoProduct{
+    text-align:center;
+  }
+  
+  
+  .flexColChild--infoProduct{
+    margin: 0 auto;
+  }
 }
 
-.flexColChild--infoProduct{
-  margin: 0 auto;
+@media screen and (min-width: 768px){
+  .flexCol--infoProduct :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: auto;
+  }
+
+  .flexRow--previewButton :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: auto !important;
+  }
 }
 
 .flexColChild--infoProduct :global(.vtex-store-components-3-x-shippingContainer){
@@ -283,3 +310,9 @@
   height: 53px;
   text-transform: none;
 }
+
+.flexRow--shelf{
+  max-width: 78.75rem;
+  margin: 0 auto;
+}
+

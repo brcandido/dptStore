@@ -108,7 +108,7 @@
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
-    padding: 140px;
+    padding: 100px;
   }
 
   .label {
@@ -147,10 +147,20 @@
   width: 100%;
 }
 
-.productNameContainer {
-  color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+.productNameContainer--quickview {
+  text-align: left;
+  font: normal normal normal 20px/15px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1
+}
+
+.productImage{
+  background: #f6f5f8;
+}
+
+.productImageTag{
+  mix-blend-mode: multiply;
 }
 
 .logoImage{
@@ -237,8 +247,11 @@
   margin: 0 1em !important;
 }
 
-.productNameContainer--quickview{
-  text-align: center;
+
+@media only screen and (max-width: 768px){
+  .productNameContainer--quickview{
+    text-align: center;
+  }
 }
 
 .productBrand{
@@ -257,21 +270,20 @@
   opacity: 1;
 }
 
+
 .shippingContainer :global(.vtex-button)::after{
   content:"OK";
   white-space: pre-wrap;
   border-bottom: 1px solid #E4DDEE;
   padding-bottom: .1rem;
   text-align: center;
-  font: normal normal bold 12px/55px Nunito Sans;
+  font: normal normal bold 12px/5px Nunito Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
 }
 
-.shippingContainer :global(.vtex-button){
-  width: auto;
-}
+
 
 .shippingContainer :global(.vtex-button__label){
   display: none;
@@ -285,19 +297,36 @@
 }
 
 .shippingContainer :global(.vtex-input)::before{
-  content:"Calcule sua entrega";
+  content:"Calcule a entrega:";
   white-space: pre-wrap;
   text-align: center;
   font: normal normal bold 14px/5px Nunito Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
- 
+  padding-top: 1.1rem;
 }
+
 
 .shippingContainer :global(.vtex-input__label){
   display: none;
 }
+.shippingContainer :global(.vtex-button){
+  width: auto;
+  padding-bottom: .1rem;
+}
+@media only screen and (min-width: 768px){
+  .shippingContainer :global(.vtex-input){
+    display: flex;
+  }
+
+.shippingContainer :global(.vtex-button){
+  width: auto;
+  padding-bottom: 1.3em;
+}
+}
+
+
 
 .productDescriptionTitle{
   text-align: center;
@@ -315,3 +344,10 @@
   opacity: 1;
 }
 
+.figure{
+  background: #f5f6f8;
+}
+
+.carouselThumbBorder{
+  mix-blend-mode: multiply;
+}

@@ -1,5 +1,7 @@
-.sliderLayoutContainer {
+.sliderLayoutContainer--carousel-destaque {
   justify-content: center;
+  max-width: 78.75rem;
+  margin: 0 auto;
 }
 
 .sliderTrackContainer {

@@ -48,12 +48,12 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-eletronicos-notebooks",
+      "menu-item#category-eletronicos-notebooks21",
+      "menu-item#category-eletronicos-notebooksGamer"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-eletronicos-notebooks": {
     "props": {
       "id": "menu-item-category-apparel-clothing",
       "type": "custom",
@@ -63,12 +63,12 @@
         "type": "internal",
         "href": "/apparel---accessories/clothing/",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-eletronicos-notebooks21": {
     "props": {
       "id": "menu-item-category-apparel-accessories",
       "type": "custom",
@@ -78,12 +78,12 @@
         "type": "internal",
         "href": "/apparel---accessories/accessories/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Notebooks 2 em 1",
+        "text": "Notebooks 2 em 1"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-eletronicos-notebooksGamer": {
     "props": {
       "id": "menu-item-category-apparel-eyeglasses",
       "type": "custom",
@@ -93,8 +93,8 @@
         "type": "internal",
         "href": "/apparel---accessories/eyeglasses/",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "Notebooks Gamers",
+        "text": "Notebooks Gamers"
       }
     }
   },

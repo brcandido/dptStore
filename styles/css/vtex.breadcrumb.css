@@ -39,3 +39,9 @@
   color: #4F32FE;
   opacity: 1;
 }
+
+@media only screen and (min-width:768px){
+  .container{
+    display: none
+  }
+}

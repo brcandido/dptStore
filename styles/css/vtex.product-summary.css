@@ -37,10 +37,11 @@
 
 .imageContainer {
   text-align: center;
+  background: #f6f5f8;
 }
 
 .image {
-  border-radius: 0.25rem;
+  mix-blend-mode: multiply;
 }
 
 .element :global(.vtex-reviews-and-ratings-1-x-inlineContainer){
