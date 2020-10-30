@@ -12,6 +12,18 @@
   }
 }
 
+.menuItem--menu-item{
+  align-self: center;
+}
+
+.menuContainer--menu-item{
+  gap: 2.5rem;
+}
+
+.styledLinkContainer--menu-item:hover{
+  border-bottom: 2px solid #4f32fe
+}
+
 @media only screen and (min-width: 768px) {
   .styledLinkContent--menu-item {
     text-align: left;
@@ -19,6 +31,12 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin: auto;
+    align-items: center;
+  }
+
+  .styledLinkContainer--menu-item, .styledLinkContent--menu-item-saldao{
+    margin: 0 1.25rem;
   }
 
   .styledLinkContent--menu-item-saldao{
@@ -27,16 +45,8 @@
     letter-spacing: 0px;
     color: #4F32FE;
     opacity: 1;
-  }
-  .styledLinkContent--menu-item-saldao::before {
-    content: " ";
-    white-space: pre-wrap;
-    width: 16pt;
-    height: 16pt;
-    margin-right: 5px;
-    position: relative;
-    top: -4px;
-    background-image: url("assets/sale-1.svg");
+    margin: auto;
+    align-items: center;
   }
 }
 
@@ -99,4 +109,33 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+
+.menuItem--menu-item-inner-desk{
+  max-height: 2.5rem;
+  min-width: 15rem;
+}
+.menuItem--menu-item-inner-desk:hover{
+  background-color: #f6f5f8;
+}
+
+.styledLinkContent--menu-item-inner-desk{
+  text-align: left;
+  font: normal normal normal 14px/5px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  bottom: 1rem;
+}
+.styledLinkContent--menu-item-inner-desk:hover{
+  text-align: left;
+  font: normal normal bold 14px/5px Nunito Sans;
+  letter-spacing: 0px;
+  color: #4F32FE;
+}
+
+.submenuWrapper--subEletro--isOpen{
+  left: 14.9rem;
+  top: -2.54rem;
+  background-color: #f6f5f8;
 }

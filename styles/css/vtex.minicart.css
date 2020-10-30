@@ -1,0 +1,12 @@
+.minicartProductListContainer:global(.vtex-flex-layout-0-x-flexRow) {
+  border-bottom: 1px solid #e4ddee;
+}
+
+.popupChildrenContainer{
+padding: 0;
+}
+
+.minicartQuantityBadgeDefault{
+  background: #2CFFF5;
+  color: #000000;
+}

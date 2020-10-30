@@ -1,0 +1,22 @@
+.productVariationsItem, .productBrandName {
+  display: none;
+}
+
+.productName{
+  text-align: left;
+  font: normal normal normal 14px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.productImage{
+  background-color: #f6f5f8;
+}
+
+.price{
+  text-align: right;
+  font: normal normal 800 14px/20px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+}

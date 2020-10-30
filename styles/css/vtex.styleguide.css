@@ -2,3 +2,8 @@
     font: normal normal bold 14px/12px;
     color: #ffffff;
 }
+
+.container{
+    border: 1px solid #E4DDEE;
+    border-radius: 15px;
+}

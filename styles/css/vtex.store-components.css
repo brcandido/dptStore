@@ -9,8 +9,8 @@
 .searchBarContainer--searchBarDesktop {
   background-color: #ffffff;
   font: normal normal bold 14px/12px;
-  min-width: 898px;
-  padding: 0 4rem;
+  min-width: 56.15rem;
+  padding: 0;
 }
 
 .searchBarIcon--searchBarDesktop{
@@ -275,13 +275,13 @@
   content:"OK";
   white-space: pre-wrap;
   border-bottom: 1px solid #E4DDEE;
-  padding-bottom: .1rem;
   text-align: center;
   font: normal normal bold 12px/5px Nunito Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
 }
+
 
 
 
@@ -294,17 +294,21 @@
   border-bottom: 1px solid #E4DDEE;
   border-radius: 0;
   height: 2rem;
+  min-width: 22rem;
+}
+
+.shippingContainer :global(.vtex-input){
+  min-width: 28.9rem;
 }
 
 .shippingContainer :global(.vtex-input)::before{
   content:"Calcule a entrega:";
   white-space: pre-wrap;
   text-align: center;
-  font: normal normal bold 14px/5px Nunito Sans;
+  font: normal normal bold 14px/43px Nunito Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
-  padding-top: 1.1rem;
 }
 
 
@@ -313,7 +317,7 @@
 }
 .shippingContainer :global(.vtex-button){
   width: auto;
-  padding-bottom: .1rem;
+  padding-top: 1.8rem;
 }
 @media only screen and (min-width: 768px){
   .shippingContainer :global(.vtex-input){
@@ -322,8 +326,10 @@
 
 .shippingContainer :global(.vtex-button){
   width: auto;
-  padding-bottom: 1.3em;
-}
+  width: 1rem;
+  height: 1rem;
+  padding-top:.9rem;
+  }
 }
 
 
@@ -346,8 +352,27 @@
 
 .figure{
   background: #f5f6f8;
+  max-width: 5.4rem;
 }
 
 .carouselThumbBorder{
   mix-blend-mode: multiply;
+}
+
+.thumbImg{
+  max-width: 5.4rem;
+  max-height: 5.4rem;
+}
+
+.productImage{
+  max-height: 32.1rem;
+  max-width: 32.1rem;
+}
+.productImageTag--main{
+  max-height: 32.1rem!important;
+  max-width: 32.1rem;
+}
+
+.figure{
+  margin: 0 auto 0 4rem;
 }

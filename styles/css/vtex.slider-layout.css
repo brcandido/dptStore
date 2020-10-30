@@ -4,6 +4,16 @@
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px){
+.sliderTrack--carousel{
+  background-color: #000000;
+}
+
+.slide--carousel--firstVisible{
+  width: auto!important;
+}
+}
+
 .sliderTrackContainer {
   max-width: 1520px;
 }

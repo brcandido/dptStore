@@ -1,0 +1,7 @@
+.wrapper :global(.vtex-slider-0-x-dotsContainer){
+    bottom:1rem;
+}
+
+.container--sticky-header{
+    background-color:#ffffff;
+}

@@ -4,8 +4,8 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "drawer",
-      "menu-item#more",
+    
+      "menu-item#more-desktop",
       "menu-item#category-eletronicos",
       "menu-item#category-celulares",
       "menu-item#category-informatica",
@@ -23,9 +23,10 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "isActive":true,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/eletronicos/",
         "noFollow": false,
         "tagTitle": "Eletrônicos",
         "text": "Eletrônicos"
@@ -40,21 +41,52 @@
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-eletronicos"
+      "flex-layout.row#menu-eletronicos"
     ]
   },
-  "vtex.menu@2.x:menu#category-eletronicos": {
-    "props": {
-      "orientation": "vertical"
-    },
+  "flex-layout.row#menu-eletronicos": {
+    "children": [
+      "flex-layout.col#menu-eletronicos-1",
+      "flex-layout.col#menu-eletronicos-2",
+      "flex-layout.col#menu-eletronicos-3"
+    ]
+  },
+  "flex-layout.col#menu-eletronicos-1": {
     "children": [
       "menu-item#category-eletronicos-notebooks",
       "menu-item#category-eletronicos-notebooks21",
-      "menu-item#category-eletronicos-notebooksGamer"
+      "menu-item#category-eletronicos-notebooksGamer",
+      "menu-item#category-eletronicos-compDesktop",
+      "menu-item#category-eletronicos-deskGamer",
+      "menu-item#category-eletronicos-allInOne",
+      "menu-item#category-eletronicos-apple"
+    ]
+  },
+  "flex-layout.col#menu-eletronicos-2": {
+    "children": [
+      "menu-item#category-eletronicos-smartHome",
+      "menu-item#category-eletronicos-multifuncionais",
+      "menu-item#category-eletronicos-monitores",
+      "menu-item#category-eletronicos-HDS",
+      "menu-item#category-eletronicos-perifericos",
+      "menu-item#category-eletronicos-impressoras",
+      "menu-item#category-eletronicos-componentes"
+    ]
+  },
+  "flex-layout.col#menu-eletronicos-3": {
+    "children": [
+      "menu-item#category-eletronicos-cartuchos",
+      "menu-item#category-eletronicos-equipamentos",
+      "menu-item#category-eletronicos-acessorioNote",
+      "menu-item#category-eletronicos-projetores",
+      "menu-item#category-eletronicos-teclado",
+      "menu-item#category-eletronicos-mouse",
+      "menu-item#category-eletronicos-acessoriosUsados"
     ]
   },
   "menu-item#category-eletronicos-notebooks": {
     "props": {
+      "blockClass": "menu-item-inner-desk",
       "id": "menu-item-category-apparel-clothing",
       "type": "custom",
       "iconId": null,
@@ -70,6 +102,7 @@
   },
   "menu-item#category-eletronicos-notebooks21": {
     "props": {
+      "blockClass": "menu-item-inner-desk",
       "id": "menu-item-category-apparel-accessories",
       "type": "custom",
       "iconId": null,
@@ -85,6 +118,7 @@
   },
   "menu-item#category-eletronicos-notebooksGamer": {
     "props": {
+      "blockClass": "menu-item-inner-desk",
       "id": "menu-item-category-apparel-eyeglasses",
       "type": "custom",
       "iconId": null,
@@ -98,6 +132,294 @@
       }
     }
   },
+  "menu-item#category-eletronicos-compDesktop": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Computadores (Desks)",
+        "text": "Computadores (Desks)"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-deskGamer": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Desk Gamer",
+        "text": "Desk Gamer"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-allInOne": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "All in One",
+        "text": "All in One"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-apple": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Apple",
+        "text": "Apple"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-smartHome": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Smart Home",
+        "text": "Smart Home"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-multifuncionais": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Multifuncionais",
+        "text": "Multifuncionais"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-monitores": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Monitores LED/LCD",
+        "text": "Monitores LED/LCD"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-HDS": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "HDS",
+        "text": "HDS"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-perifericos": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Acessórios e Periféricos",
+        "text": "Acessórios e Periféricos"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-impressoras": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Impressoras",
+        "text": "Impressoras"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-componentes": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Componentes e Peças",
+        "text": "Componentes e Peças"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-cartuchos": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Cartuchos e Toners",
+        "text": "Cartuchos e Toners"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-equipamentos": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Equipamentos de rede/wireless",
+        "text": "Equipamentos de rede/wireless"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-acessorioNote": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Acessórios para Notebooks",
+        "text": "Acessórios para Notebooks"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-projetores": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Projetores",
+        "text": "Projetores"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-teclado": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Teclado",
+        "text": "Teclado"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-mouse": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Mouse",
+        "text": "Mouse"
+      }
+    }
+  },
+  "menu-item#category-eletronicos-acessoriosUsados": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Acessórios de Informática Usados",
+        "text": "Acessórios de Informatica Usados"
+      }
+    }
+  },
   "menu-item#category-celulares": {
     "props": {
       "blockClass": "menu-item",
@@ -107,7 +429,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/celulares/",
         "noFollow": false,
         "tagTitle": "Celulares",
         "text": "Celulares"
@@ -207,11 +529,16 @@
         "noFollow": false,
         "tagTitle": "Saldão",
         "text": "Saldão"
+      },
+      "iconProps":{
+        "id": "surface1",
+        "size": 19
       }
     }
   },
   "menu-item#more": {
     "props": {
+      "orientation":"horizontal",
       "blockClass":"menu-item",                   
       "id": "menu-item-custom-sale",
       "type": "custom",
@@ -229,41 +556,188 @@
       "vtex.menu@2.x:submenu#more"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+  "menu-item#more-desktop": {
     "props": {
-      "width": "100%"
+      "orientation":"horizontal",
+      "blockClass":"menu-item",                   
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Todos os Departamentos",
+        "text": "Todos os Departamentos"
+      },
+      "iconProps":{
+        "id": "hpa-hamburguer-menu",
+        "size": "21"
+      }
     },
+    "blocks": [
+      "vtex.menu@2.x:submenu#more"
+    ]
+  },
+  "vtex.menu@2.x:submenu#more": {
     "children": [
       "flex-layout.row#menu-more"
-    ]
+    ],
+    "props":{
+      "orientation":"horizontal"
+    }
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-more-1"
     ]
   },
   "flex-layout.col#menu-more-1": {
     "children": [
-      "vtex.menu@2.x:menu#more"
+      "menu-item#category-todos-eletrodomesticos",
+      "menu-item#category-todos-games",
+      "menu-item#category-todos-celulares",
+      "menu-item#category-todos-TVS",
+      "menu-item#category-todos-informatica",
+      "menu-item#category-todos-moda",
+      "menu-item#category-todos-esporte",
+      "menu-item#category-todos-moveis",
+      "menu-item#category-todos-beleza"
     ]
   },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
+  "menu-item#category-todos-games": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Games e PC Gamer",
+        "text": "Games e PC Gamer"
+      }
+    }
   },
-  "menu-item#about-us": {
+  "menu-item#category-todos-celulares": {
     "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Celulares",
+        "text": "Celulares"
+      }
+    }
+  },
+  "menu-item#category-todos-TVS": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "TV, Audio e Home Theater",
+        "text": "TV, Áudio e Home Theater"
+      }
+    }
+  },
+  "menu-item#category-todos-informatica": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Informática",
+        "text": "Informática"
+      }
+    }
+  },
+  "menu-item#category-todos-moda": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Moda",
+        "text": "Moda"
+      }
+    }
+  },
+  "menu-item#category-todos-esporte": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Esporte e Suplementos",
+        "text": "Esporte e Suplementos"
+      }
+    }
+  },
+  "menu-item#category-todos-moveis": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Móveis e Decoração",
+        "text": "Móveis e Decoração"
+      }
+    }
+  },
+  "menu-item#category-todos-beleza": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Beleza e Perfumaria",
+        "text": "Beleza e Perfumaria"
+      }
+    }
+  },
+  "menu-item#category-todos-eletrodomesticos": {
+    "props": {
+      "orientation":"horizontal",
+      "blockClass":"menu-item-inner-desk",
       "id": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
@@ -272,23 +746,289 @@
         "type": "internal",
         "href": "/about-us",
         "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "tagTitle": "Eletrodomésticos e Casa",
+        "text": "Eletrodomésticos e Casa"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#eletro"
+    ]
+  },
+  "vtex.menu@2.x:submenu#eletro": {
+    "children": [
+      "flex-layout.row#menu-eletro"
+    ],
+    "props":{
+      "orientation":"horizontal",
+      "blockClass":"subEletro"
+    }
+  },
+  "flex-layout.row#menu-eletro": {
+    "children": [
+      "flex-layout.col#menu-eletro-1",
+      "flex-layout.col#menu-eletro-2"
+    ]
+  },
+  "flex-layout.col#menu-eletro-1": {
+    "children": [
+      "menu-item#category-todos-adega",
+      "menu-item#category-todos-cervejeira",
+      "menu-item#category-todos-cooktop",
+      "menu-item#category-todos-fogao",
+      "menu-item#category-todos-geladeira",
+      "menu-item#category-todos-lavaESeca",
+      "menu-item#category-todos-maquinaDeLavar",
+      "menu-item#category-todos-microondas"
+    ]
+  },
+  "menu-item#category-todos-adega": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Adega Climatizada",
+        "text": "Adega Climatizada"
       }
     }
   },
-  "menu-item#faq": {
+  "menu-item#category-todos-cervejeira": {
     "props": {
-      "id": "menu-item-faq",
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
       "type": "custom",
       "iconId": null,
-      "highlight": false,
+      "highlight": true,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Cervejeira",
+        "text": "Cervejeira"
+      }
+    }
+  },
+  "menu-item#category-todos-cooktop": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Cooktop",
+        "text": "Cooktop"
+      }
+    }
+  },
+  "menu-item#category-todos-fogao": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Fogão",
+        "text": "Fogão"
+      }
+    }
+  },
+  "menu-item#category-todos-geladeira": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Geladeira/Refrigerador",
+        "text": "Geladeira/Refrigerador"
+      }
+    }
+  },
+  "menu-item#category-todos-lavaESeca": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Lava e Seca",
+        "text": "Lava e Seca"
+      }
+    }
+  },
+  "menu-item#category-todos-maquinaDeLavar": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Máquina de Lavar",
+        "text": "Máquina de Lavar"
+      }
+    }
+  },
+  "menu-item#category-todos-microondas": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Micro-ondas",
+        "text": "Micro-ondas"
+      }
+    }
+  },
+  "flex-layout.col#menu-eletro-2": {
+    "children": [
+      "menu-item#category-todos-aspirador",
+      "menu-item#category-todos-batedeira",
+      "menu-item#category-todos-cafeteira",
+      "menu-item#category-todos-fritadeira",
+      "menu-item#category-todos-liquidificador",
+      "menu-item#category-todos-mixer",
+      "menu-item#category-todos-purificador"
+    ]
+  },
+  "menu-item#category-todos-aspirador": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Aspirador de Pó",
+        "text": "Aspirador de Pó"
+      }
+    }
+  },
+  "menu-item#category-todos-batedeira": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Batedeira",
+        "text": "Batedeira"
+      }
+    }
+  },
+  "menu-item#category-todos-cafeteira": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Cafeteira Expressa",
+        "text": "Cafeteira Expressa"
+      }
+    }
+  },
+  "menu-item#category-todos-fritadeira": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Fritadeira Elétrica",
+        "text": "Fritadeira Elétrica"
+      }
+    }
+  },
+  "menu-item#category-todos-liquidificador": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Liquidificador",
+        "text": "Liquidificador"
+      }
+    }
+  },
+  "menu-item#category-todos-mixer": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Mixer",
+        "text": "Mixer"
+      }
+    }
+  },
+  "menu-item#category-todos-purificador": {
+    "props": {
+      "blockClass": "menu-item-inner-desk",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Purificador de Água",
+        "text": "Purificador de Água"
       }
     }
   }

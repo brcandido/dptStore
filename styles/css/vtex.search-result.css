@@ -1,0 +1,165 @@
+@media only screen and (max-width: 768px){
+.filterIcon, .filterPopupArrowIcon, .filterAccordionItemBox :global(.vtex-search-result-3-x-caretIcon) {
+  display: none;
+}
+
+.orderByButton::before {
+  content: "Ordenar";
+  text-align: left;
+  font: normal normal bold 14px/15px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.orderByText {
+  display: none;
+}
+
+.filterPopupTitle{
+  text-align: left;
+  font: normal normal bold 14px/5px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.orderByButton{
+  border: 0;
+  justify-content: center;
+}
+
+.orderByOptionsContainer{
+  top: 3.2rem;
+  left: .15rem;
+  border-radius: 0;
+  border-top: 1px solid #4f32fe
+}}
+
+
+@media only screen and (min-width: 768px){
+.orderByButton{
+  border: 1px solid #E4DDEE;
+  border-radius: 22px;
+  height: 43px;
+}
+}
+
+.filtersWrapperMobile{
+  border-left: 1px solid #e4ddee;
+  border-bottom: 1px solid #e4ddee;
+}
+
+.totalProducts--layout{
+  border: none;
+  text-align: left;
+  font: normal normal bold 12px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #4F32FE;
+}
+
+.totalProductsMessage{
+  text-align: left;
+  font: normal normal 600 10px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.galleryTitle--layout{
+  text-align: left;
+  font: normal normal bold 30px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.galleryItem--normal{
+  flex-basis: 33%!important;
+  max-width: 33%!important;
+}
+
+.filterMessage{
+  text-align: left;
+  font: normal normal bold 16px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.filterTitle{
+  text-align: left;
+  font: normal normal bold 14px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #847B91;
+  opacity: 1;
+}
+
+.filter__container--selectedFilters{
+  display: none;
+}
+
+.caretIcon{
+  color: #4F32FE;
+  fill: currentColor;
+}
+
+.accordionFilter, .filterButtonsBox, .filterAccordionBreadcrumbs{
+  background:#f6f5f8;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button){
+  background: #4F32FE 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  font: normal normal bold 16px/43px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+
+.filterClearButtonWrapper :global(.vtex-button){
+  text-align: center;
+  font: normal normal bold 16px/43px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+}
+
+.filterAccordionBreadcrumbs{
+  border: 0;
+}
+
+.filterBreadcrumbsText{
+  border: 0;
+  text-align: left;
+  font: normal normal bold 20px/30px Nunito Sans;
+  letter-spacing: 0px;
+  color: #17100D;
+  opacity: 1;
+}
+
+.accordionFilterContainer{
+  border-bottom: 1px solid #e4ddee;
+}
+
+.accordionFilterItemTitle{
+  text-align: left;
+  font: normal normal normal 16px/50px Nunito Sans;
+  letter-spacing: 0px;
+  color: #17100D;
+  opacity: 1;
+}
+
+.filterBreadcrumbsItemName{
+  text-align: left;
+  font: normal normal bold 20px/30px Nunito Sans;
+  letter-spacing: 0px;
+  color: #4F32FE;
+  opacity: 1;
+}
+
+.filterBreadcrumbsContent{
+  padding-right: 1rem;
+}

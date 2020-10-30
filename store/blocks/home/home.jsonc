@@ -27,7 +27,7 @@
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 561,
       "images": [
         {
           "image": "assets/bannerPrincipal.png",
@@ -145,7 +145,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "19"
     }
   },
   "slider-layout#demo-products": {

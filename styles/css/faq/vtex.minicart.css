@@ -1,3 +1,11 @@
 .openIconContainer{
     padding: .75rem 0;
 }
+
+.minicartCheckoutButton :global(.vtex-button){
+    background: #4f32fe;
+    border-radius: 27px;
+    min-height: 3.3rem;
+    min-width: 17rem;
+}
+

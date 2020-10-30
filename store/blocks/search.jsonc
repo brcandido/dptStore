@@ -72,6 +72,11 @@
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
+      },
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [{"name": "Categoria"}, {"name": "Subcategoria"}, {"name": "Voltagem"}, {"name": "Filtrado por:"}, {"name": "Capacidade"}]
+        }
       }
     }
   },
@@ -83,13 +88,17 @@
     }
   },
   "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+    "children": ["search-title.v2"],
+    "props":{
+      "blockClass":"searchTitle"
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
       "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass":"result"
     }
   },
   "flex-layout.col#filter": {
@@ -111,7 +120,10 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.col#orderby"]
+    "children": ["flex-layout.col#productCount", "flex-layout.col#orderby"],
+    "props":{
+      "blockClass":"numprodutos"
+    }
   },
   "flex-layout.col#productCount": {
     "children": ["total-products.v2"],
@@ -158,6 +170,11 @@
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
+      },
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [{"name": "Categoria"}, {"name": "Subcategoria"}, {"name": "Voltagem"}, {"name": "filtrado por:"}, {"name": "Marca"}]
+        }
       }
     }
   },
@@ -171,20 +188,45 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#filterMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
-      "colJustify": "around"
+      "colJustify": "around",
+      "fullWidth": true
     }
   },
 
   "flex-layout.col#orderByMobile": {
-    "children": ["order-by.v2"],
+    "children": ["order-by.v2#mobile"],
     "props": {
-      "blockClass": "orderByMobileCol"
+      "blockClass": "orderByMobileCol",
+      "width": "grow"
+    }
+  },
+
+  "order-by.v2#mobile":{
+    "props": {
+      "showOrderTitle": false,
+      "hiddenOptions":[
+        "OrderByReleaseDateDESC",
+        "OrderByBestDiscountDESC",
+        "OrderByNameASC",
+        "OrderByNameDESC"
+      ]
+    }
+  },
+  
+  "order-by.v2":{
+    "props": {
+      "showOrderTitle": true,
+      "hiddenOptions":[
+        "OrderByReleaseDateDESC",
+        "OrderByBestDiscountDESC",
+        "OrderByNameASC",
+        "OrderByNameDESC"
+      ]
     }
   },
 
@@ -198,7 +240,8 @@
   "flex-layout.col#filterMobile": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterMobileCol"
+      "blockClass": "filterMobileCol",
+      "width":"grow"
     }
   },
   "flex-layout.col#switcherMobile": {

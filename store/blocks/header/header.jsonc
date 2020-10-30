@@ -41,11 +41,10 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.col#spacer",
+      
       "flex-layout.col#logo-desktop",
       "flex-layout.col#searchBarDesktop",
-      "flex-layout.col#loginCart",
-      "flex-layout.col#spacer"
+      "flex-layout.col#loginCart"
     ]
   },
   "flex-layout.col#loginCart":{
@@ -68,7 +67,7 @@
     "children":["search-bar#desktop"],
     "props":{
       "blockClass": "searchBarDesktop",
-      "width": "70%",
+      "width": "80%",
       "marginRight": "0"
     }
   },
@@ -97,9 +96,8 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#spacer",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer"
+     
+      "flex-layout.col#category-menu"
     ]
   },
   "search-bar#desktop": {
@@ -118,7 +116,8 @@
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass":"col-menu"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },

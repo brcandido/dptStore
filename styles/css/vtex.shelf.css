@@ -1,3 +1,7 @@
 .title{
     display: none;
 }
+
+.sliderContainer:global(.vtex-slider-0-x-dotsContainer){
+    bottom:1rem;
+}

@@ -23,12 +23,12 @@
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /*
  * remove the extra padding when stuck from the desktop header
@@ -51,12 +51,12 @@
   }
 
   /* header background when stuck and not hovered */
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+  /* :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
     background: rgba(240, 240, 240, 0.8);
-  }
+  } */
 }
 
 /* stick wrapper with the same color as the desktop/mobile header */

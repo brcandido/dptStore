@@ -326,7 +326,7 @@
             "fontFamily": "Nunito Sans, San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "0.875rem",
-            "textTransform": "uppercase",
+            "textTransform": "initial",
             "letterSpacing": "0"
           },
           "action--large": {

@@ -1,0 +1,18 @@
+.summaryItemLabel{
+    text-align: left;
+    font: normal normal normal 14px/20px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.price{
+    text-align: right;
+    font: normal normal 800 14px/20px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.summarySmallContent{
+    padding: 0 1.5rem;
+}
+
