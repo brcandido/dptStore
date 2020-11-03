@@ -356,3 +356,15 @@
   border-bottom: 1px solid #f6f5f8;
   padding-bottom: 0;
 }
+
+.flexRowContent--breadcrumb-about-us{
+  display: flex;
+}
+.flexRowContent--breadcrumb-about-us:first-child{
+  align-items:center;
+}
+
+.flexRow--selecioneMenu{
+  border-bottom: 1px solid #e4ddee;
+
+}
