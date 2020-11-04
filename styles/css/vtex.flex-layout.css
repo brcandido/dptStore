@@ -379,3 +379,11 @@
   border-right: 1px solid #e4ddee;
   padding-right: .75rem
 }
+
+.flexCol--menu-aboutUs{
+  width: 30%!important;
+}
+
+.flexColChild--menu-aboutUs{
+  height: initial!important;
+}

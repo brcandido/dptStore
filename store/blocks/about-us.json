@@ -22,6 +22,58 @@
       "rich-text#about-us"
     ]
   },
+  "responsive-layout.desktop":{
+    "children": [
+      "flex-layout.row#img-aboutUs",
+      "flex-layout.row#corpo-aboutUs"
+    ]
+  },
+
+  "flex-layout.row#img-aboutUs":{
+    "children":[
+      "image#banner-aboutUs"
+    ],
+    "props":{
+      "fullWidth": true
+    }
+  },
+
+  "image#banner-aboutUs":{
+    "props":{
+      "src": "assets/banner-aboutUs.png",
+      "width": "1920"
+    }
+  },
+  "flex-layout.row#corpo-aboutUs":{
+    "children": [
+      "flex-layout.col#menu-aboutUs",
+      "flex-layout.col#texto-aboutUs"
+
+    ]
+  },
+
+  "flex-layout.col#menu-aboutUs":{
+    "children": [
+      "vtex.menu@2.x:menu#footer-sobre-desktop",
+      "vtex.menu@2.x:menu#footer-atendimento-desktop",
+      "vtex.menu@2.x:menu#footer-ajuda-desktop"
+    ],
+    "props":{
+      "blockClass":"menu-aboutUs"
+    }
+  },
+
+  "flex-layout.col#texto-aboutUs":{
+    "children": [
+      "flex-layout.row#breadcrumb-about-us",
+      "rich-text#titulo-aboutUs",
+      "rich-text#about-us"
+    ],
+    "props":{
+      "horizontalAlign":"left"
+    }
+  },
+
   "flex-layout.row#menu-sobre":{
     "children": ["drawer#aboutUs"],
     "props":{
