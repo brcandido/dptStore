@@ -359,6 +359,7 @@
 
 .flexRowContent--breadcrumb-about-us{
   display: flex;
+  gap: .75rem;
 }
 .flexRowContent--breadcrumb-about-us:first-child{
   align-items:center;
@@ -366,5 +367,15 @@
 
 .flexRow--selecioneMenu{
   border-bottom: 1px solid #e4ddee;
+}
 
+.flexColChild--link-home :global(.vtex-store-link-0-x-link--link-home){
+  text-align: left;
+  font: normal normal normal 12px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  text-decoration: initial;
+  border-right: 1px solid #e4ddee;
+  padding-right: .75rem
 }

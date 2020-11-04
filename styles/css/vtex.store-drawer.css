@@ -1,16 +1,38 @@
-@media only screen and (max-width: 768px){
-.drawer{
+@media only screen and (max-width: 768px) {
+  .drawer {
     background: #F6F5F8 0% 0% no-repeat padding-box;
 
-}
+  }
 
-.menuIcon{
+  .menuIcon {
     fill: currentColor;
     color: #4f32fe;
-}
+  }
 
-.closeIcon{
+  .closeIcon {
     fill: currentColor;
     color: #4f32fe;
+  }
 }
+
+.childrenContainer--drawer-aboutUs {
+  flex-direction: column;
+}
+
+.opened--drawer-aboutUs, .childrenContainer--drawer-aboutUs :global(.vtex-menu-2-x-menuItem--menu-footer-inner) {
+  background: #F6F5F8;
+}
+
+.childrenContainer--drawer-aboutUs :global(.vtex-menu-2-x-menuItem--menu-footer-mobile) {
+  border-bottom: 1px solid #e4ddee;
+}
+
+
+
+.childrenContainer--drawer-aboutUs :global(.vtex-menu-2-x-styledLinkContent) {
+  text-align: left;
+  font: normal normal normal 16px/50px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1
 }
