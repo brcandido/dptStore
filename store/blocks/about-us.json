@@ -41,7 +41,7 @@
   "image#banner-aboutUs":{
     "props":{
       "src": "assets/banner-aboutUs.png",
-      "width": "1920"
+      "width": "1920px"
     }
   },
   "flex-layout.row#corpo-aboutUs":{
@@ -49,7 +49,10 @@
       "flex-layout.col#menu-aboutUs",
       "flex-layout.col#texto-aboutUs"
 
-    ]
+    ],
+    "props":{
+      "blockClass": "corpo-aboutUs"
+    }
   },
 
   "flex-layout.col#menu-aboutUs":{
@@ -59,7 +62,9 @@
       "vtex.menu@2.x:menu#footer-ajuda-desktop"
     ],
     "props":{
-      "blockClass":"menu-aboutUs"
+      "blockClass":"menu-aboutUs",
+      "width": "25%",
+      "horizontalAlign":"left"
     }
   },
 

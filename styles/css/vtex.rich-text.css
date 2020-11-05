@@ -157,6 +157,15 @@
   opacity: 1;
 }
 
+@media only screen and (min-width:1026px){
+  .container--titulo-aboutUs{
+    display: initial;
+  }
+  .wrapper--text-aboutUs{
+    text-align:left;
+  }
+  }
+
 .wrapper--titulo-aboutUs{
   text-align: left;
   font: normal normal bold 20px/31px Nunito Sans;

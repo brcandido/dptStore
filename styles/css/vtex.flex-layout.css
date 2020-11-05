@@ -220,7 +220,7 @@
   justify-content: center;
 }
 .flexRowContent--socialNetworks {
- width: 50%;
+ width: 80%;
 }
 
 .flexRow--socialNetworks :global(.vtex-flex-layout-0-x-flexRow){
@@ -253,9 +253,17 @@
 
 .flexRowContent--payment-methods-desktop {
   display: grid;
-  grid-template-columns: 70px 70px 70px;
+  grid-template-columns: 60px 60px 60px;
   grid-template-rows: 1fr 1fr;
   justify-content: flex-start;
+}
+
+.flexRowContent--payment-methods-desktop :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content:flex-start;
+}
+.flexRowContent--socialNetworks :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content:flex-start;
+  width: 25%!important;
 }
 
 .flexRow--menu-row {
@@ -386,4 +394,35 @@
 
 .flexColChild--menu-aboutUs{
   height: initial!important;
+}
+
+@media only screen and (min-width:1026px){
+.flexRow--breadcrumb-about-us{
+  width:20%;
+}
+}
+
+.flexRow--corpo-aboutUs{
+  max-width: 78.75rem;
+  margin: 0 auto;
+}
+
+.flexRowContent--corpo-aboutUs :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content:flex-start;
+}
+
+@media only screen and (min-width: 1026px){
+.flexRowContent--breadcrumb-about-us :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: auto!important;
+}
+}
+
+.flexColChild--menu-aboutUs :global(.vtex-menu-2-x-menuContainer){
+  border-bottom: 1px solid #e4ddee;
+  width: 15rem;
+}
+
+.flexRowContent--menu-row{
+  max-width: 882px;
+  margin: 0 auto;
 }
