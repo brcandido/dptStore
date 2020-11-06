@@ -35,9 +35,9 @@
     align-items: center;
   }
 
-  .styledLinkContainer--menu-item, .styledLinkContent--menu-item-saldao{
+  /* .styledLinkContainer--menu-item, .styledLinkContent--menu-item-saldao{
     margin: 0 1.25rem;
-  }
+  } */
 
   .styledLinkContent--menu-item-saldao{
     text-align: left;

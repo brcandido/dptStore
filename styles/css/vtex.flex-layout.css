@@ -50,6 +50,7 @@
 .flexRowContent--main-header {
   background-color: #ffffff;
   align-items: center;
+  padding: .5rem 0;
 }
 
 .flexRowContent--main-header-mobile {
@@ -74,14 +75,31 @@
   padding: 14px 0px;
 }
 
-.flexRow--deals .stretchChildrenWidth {
-  align-items: center;
+.flexRowContent--deals{
+  max-width:78.75rem;
+  margin: 0 auto;
+}
+
+.flexRow--deals .stretchChildrenWidth:last-child .flexCol {
+  justify-content:flex-end;
 }
 
 .flexRow--deals .flexCol {
   align-items: center;
   flex-direction: row;
+  
+}
+@media only screen and (max-width: 1026px){
+.flexRow--deals .flexCol {
+  align-items: center;
+  flex-direction: row;
   justify-content: center;
+}
+}
+
+.flexRowContent--deals .flexColChild{
+  display: flex;
+  align-items:center;
 }
 
 .flexCol--filterCol {
@@ -144,6 +162,7 @@
 .flexCol--loginCart {
   flex-direction: row;
   align-items: baseline;
+  justify-content:flex-end;
 }
 
 .flexColChild--searchBarDesktop :global(.vtex-store-components-3-x-searchBarContainer) {
@@ -261,10 +280,11 @@
 .flexRowContent--payment-methods-desktop :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
   justify-content:flex-start;
 }
+@media only screen and (min-width: 1026px){
 .flexRowContent--socialNetworks :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
   justify-content:flex-start;
   width: 25%!important;
-}
+}}
 
 .flexRow--menu-row {
   padding-bottom: 2em;
@@ -423,6 +443,10 @@
 }
 
 .flexRowContent--menu-row{
-  max-width: 882px;
+  max-width: 62rem;
   margin: 0 auto;
+}
+
+.flexRow--menu-row .stretchChildrenWidth:last-child .flexCol{
+  justify-content:flex-end;
 }
