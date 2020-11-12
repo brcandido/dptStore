@@ -27,7 +27,10 @@
     "children":[
       "rich-text#pagamentos",
       "flex-layout.row#footer-2-desktop"
-    ]
+    ],
+    "props":{
+      "blockClass":"colPagamentos"
+    }
   },
   "rich-text#pagamentos":{
     "props":{
@@ -41,7 +44,10 @@
     "children":[
       "rich-text#socNet",
       "flex-layout.row#socNet"
-    ]
+    ],
+    "props":{
+      "blockClass":"colSocialNetworks"
+    }
   },
   "rich-text#socNet":{
     "props":{
@@ -177,7 +183,8 @@
       "image#pci"
     ],
     "props":{
-      "paddingBottom": 5
+      "paddingBottom": 5,
+      "blockClass":"badges1"
     }
   },
 
@@ -190,15 +197,18 @@
   },
   "flex-layout.row#2-footer-mobile": {
     "children": [
-      "flex-layout.row#social-networks",
-      "flex-layout.row#payment",
-      "flex-layout.row#badges1",
-      "flex-layout.row#allRights"
+      "flex-layout.col#2-footer-mobile"
     ],
     "props": {
       "blockClass": "payment-methods",
       "paddingBottom": 4
     }
+  },
+  "flex-layout.col#2-footer-mobile":{
+    "children": [ "flex-layout.row#social-networks",
+      "flex-layout.row#payment",
+      "flex-layout.row#badges1",
+      "flex-layout.row#allRights"]
   },
   "flex-layout.row#1-footer-mobile": {
     "props": {
@@ -270,6 +280,11 @@
     }
   },
   "flex-layout.row#allRights":{
+    "children":[
+      "flex-layout.col#allRights"
+    ]
+  },
+  "flex-layout.col#allRights":{
     "children":[
       "rich-text#avanti",
       "flex-layout.row#avantiVTEX"

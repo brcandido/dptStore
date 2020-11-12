@@ -1,7 +1,15 @@
-.title{
-    display: none;
+.title {
+  display: none;
 }
 
-.sliderContainer:global(.vtex-slider-0-x-dotsContainer){
-    bottom:1rem;
+.sliderContainer:global(.vtex-slider-0-x-dotsContainer) {
+  bottom: 1rem;
+}
+
+.sliderContainer:global(.vtex-slider-0-x-sliderFrame) {
+  gap: 1rem;
+}
+
+.sliderContainer {
+  padding-bottom: 10rem;
 }

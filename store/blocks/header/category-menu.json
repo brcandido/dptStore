@@ -16,6 +16,23 @@
       "menu-item#category-saldao"
     ]
   },
+  "menu-item#category-eletronicos-drawer": {
+    "props": {
+      "blockClass": "menu-item",
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "isActive":true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/eletronicos/",
+        "noFollow": false,
+        "tagTitle": "Eletrônicos",
+        "text": "Eletrônicos"
+      }
+    }
+  },
   "menu-item#category-eletronicos": {
     "props": {
       "blockClass": "menu-item",

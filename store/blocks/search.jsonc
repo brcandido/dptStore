@@ -15,7 +15,7 @@
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -112,11 +112,29 @@
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchmore",
+      "rich-text#title-search",
+      "rich-text#text-search"
     ],
     "props": {
       "width": "grow",
       "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title-search": {
+    "props": {
+      "text": "Aqui você encontra o melhor de tudo",
+      "blockClass": "shelfTitle",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "rich-text#text-search": {
+    "props": {
+      "blockClass":"search-text",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
     }
   },
   "flex-layout.row#searchinfo": {
@@ -163,7 +181,9 @@
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchmore",
+      "rich-text#title-search",
+      "rich-text#text-search"
     ],
     "props": {
       "pagination": "show-more",
@@ -242,6 +262,13 @@
     "props": {
       "blockClass": "filterMobileCol",
       "width":"grow"
+    }
+  },
+
+  "filter-navigator.v3":{
+    "props": {
+      "maxItemsCategory": 6,
+      "maxItemsDepartment": 6
     }
   },
   "flex-layout.col#switcherMobile": {

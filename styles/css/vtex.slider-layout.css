@@ -27,9 +27,10 @@
   margin-bottom: .5rem;
 }
 .paginationDotsContainer--shelf {
-  bottom: 2em;
-  margin-top: .5rem;
+  bottom: 1em;
+  margin-top: 1rem;
   margin-bottom: .5rem;
+  gap: 2rem;
 }
 
 .layoutContainer--shelf {
@@ -46,4 +47,28 @@
 
 :global(.vtex-shelf-1-x-relatedProducts-title ){
   display: none;
+}
+
+.sliderRightArrow{
+  background-color: white!important;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 3px 6px #4F32FE11;
+  position: absolute;
+  top: 140px;
+  right: -30px;
+}
+
+.sliderLeftArrow{
+  background-color: white!important;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 3px 6px #4F32FE11;
+  position: absolute;
+  top: 140px;
+  left: -30px;
+}
+
+.caretIcon--shelf{
+  color: #4f32fe;
 }

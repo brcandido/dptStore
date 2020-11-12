@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1026px) {
   .menuItem--menu-item {
     text-align: left;
     font: normal normal normal 16px/40px Nunito Sans;
@@ -20,11 +20,9 @@
   gap: 2.5rem;
 }
 
-.styledLinkContainer--menu-item:hover{
-  border-bottom: 2px solid #4f32fe
-}
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 1026px) {
   .styledLinkContent--menu-item {
     text-align: left;
     font: normal normal 600 15px/12px Nunito Sans;
@@ -33,6 +31,10 @@
     opacity: 1;
     margin: auto;
     align-items: center;
+  }
+
+  .styledLinkContainer--menu-item:hover{
+    border-bottom: 2px solid #4f32fe
   }
 
   /* .styledLinkContainer--menu-item, .styledLinkContent--menu-item-saldao{
@@ -78,7 +80,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1026px) {
   .menuItem--menu-footer-inner {
     background-color: #fcfcfc;
     border-bottom: 1px solid #f6f5f8;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1026px){
 .filterIcon, .filterPopupArrowIcon, .filterAccordionItemBox :global(.vtex-search-result-3-x-caretIcon) {
   display: none;
 }
@@ -37,11 +37,12 @@
 }}
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1026px){
 .orderByButton{
   border: 1px solid #E4DDEE;
   border-radius: 22px;
   height: 43px;
+  justify-content: space-between;
 }
 }
 
@@ -162,4 +163,40 @@
 
 .filterBreadcrumbsContent{
   padding-right: 1rem;
+}
+
+
+.searchNotFoundOops{
+  text-align: left;
+  font: normal normal bold 30px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  align-self: baseline;
+  padding: 2rem 0 0 0;
+}
+
+.searchNotFoundInfo{
+  text-align: left;
+  font: normal normal bold 16px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.searchNotFoundWhatDoIDo, .searchNotFoundWhatToDoDotsContainer{
+  text-align: left;
+  font: normal normal normal 14px/30px Nunito Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.searchNotFoundWhatDoIDo{
+  margin-bottom: 0;
+}
+
+.searchNotFoundWhatToDoDotsContainer{
+  margin-top:0;
+  padding: 0;
 }
