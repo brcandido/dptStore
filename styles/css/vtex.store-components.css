@@ -147,6 +147,11 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 1026px){
+.carouselGaleryCursor{
+  padding-left: 0;
+}
+}
 .productNameContainer--quickview {
   text-align: left;
   font: normal normal normal 20px/15px Nunito Sans;
@@ -240,7 +245,6 @@
 .swiperPaginationClickable{
   margin-top:2em;
   position: relative;
-  display: none;
 }
 
 .swiperBullet{
@@ -369,8 +373,23 @@
   max-width: 32.1rem;
 }
 .productImageTag--main{
-  max-height: 32.1rem!important;
-  max-width: 32.1rem;
+  max-height: 32rem!important;
+  max-width: 32rem;
+}
+@media only screen and (max-width: 1026px){
+.productImageTag--main{
+  max-height: 23.4rem!important;
+  max-width: 23.4rem;
+}
+
+.carouselGaleryThumbs{
+  display: none;
+}
+
+.productImagesGallerySlide{
+  display:flex;
+  justify-content:center;
+}
 }
 
 .figure{

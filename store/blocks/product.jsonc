@@ -48,7 +48,7 @@
 
   "flex-layout.row#product-main": {
     "props": {
-      "colGap": 7,
+      "colGap": 10,
       "rowGap": 7,
       "marginTop": 4,
       "marginBottom": 7,
@@ -82,7 +82,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
+      "width": "55%",
       "rowGap": 0
     }
   },
@@ -92,18 +92,21 @@
   "product-images": {
     "props": {
       "aspectRatio": {
-        "desktop": "auto",
-        "phone": "auto"
+        "desktop": "1:1",
+        "phone": "1:1"
       },
       "displayThumbnailsArrows": false,
-      "showNavigationArrows": false
+      "showNavigationArrows": false,
+      "maxHeight": "341px",
+      "showPaginationDots": true
     }
   },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0,
-      "blockClass": "infoProduct"
+      "blockClass": "infoProduct",
+      "width": "45%"
     },
     "children": [
       "flex-layout.row#product-name",
